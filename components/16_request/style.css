@@ -1,0 +1,319 @@
+.main-request .request__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-request .request__wrapper {
+    z-index: 0;
+}
+
+.main-request .request__info:has(.request__title.d-none) {
+    flex-direction: column-reverse;
+}
+
+.main-request .request__info:has(.request__title.d-none) .request__subtitle {
+    order: 2;
+    margin-bottom: -20px;
+}
+
+.main-request .request__wrapper.padded-b {
+    padding-bottom: 60px;
+}
+
+.main-request .request__wrapper.padded-t {
+    padding-top: 60px;
+}
+
+.main-request .request__wrapper.padded-b .request__text,
+.main-request .request__wrapper.padded-t .request__text {
+    margin-bottom: 15px;
+}
+
+.main-request .v_request__wrapper-align-right .request__title,
+.main-request .v_request__wrapper-align-right .request__subtitle {
+    text-align: right;
+    margin-left: auto;
+}
+
+.main-request .v_request__wrapper-align-center .request__title,
+.main-request .v_request__wrapper-align-center .request__subtitle {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-request .request__title {
+    font-size: 2.6em;
+    font-weight: 800;
+    line-height: 115%;
+    letter-spacing: -1%;
+    margin-bottom: 0.25em;
+    max-width: 571px;
+    position: relative;
+    z-index: 2;
+}
+
+.main-request .request__subtitle {
+    font-size: 1.5em;
+    line-height: 1.26em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+}
+
+.main-request .request__text {
+    font-size: 1.6em;
+    line-height: 130.5%;
+    position: relative;
+    z-index: 2;
+    max-width: 311px;
+}
+
+.main-request .request__text b {
+    font-weight: 700;
+}
+
+.main-request .request__row {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--color-mid);
+}
+
+.main-request .request__col-info {
+    width: 64%;
+    height: 411px;
+    position: relative;
+}
+
+.main-request .request__col-info .info-wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.main-request .request__col-info .info-wrap:before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    width: 938px;
+    height: 938px;
+    border-radius: 50%;
+    background: var(--color-semi-transparent);
+    right: 250px;
+}
+
+.main-request .request__col-info .info-wrap .img-big {
+    width: 100%;
+    height: 100%;
+}
+
+.main-request .request__col-info .info-wrap .img-big img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-request .request__col-info .info-wrap .img-small {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.main-request .request__col-info .info-wrap .img-small img {
+    height: 100%;
+    width: auto;
+}
+
+.main-request .request__col-info .info__wrap {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.main-request .request__col-form {
+    width: 36%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.main-request .request__form {
+    background: var(--color-popups);
+}
+
+.main-request .request__form form {
+    max-width: 303px;
+}
+
+.main-request .request__form .form__row {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-request .request__form .form__row .form__col {
+    width: 100%;
+}
+
+.main-request .request__form .form__field {
+    margin-bottom: 10px;
+}
+
+.main-request .request__form .form__row-bottom {
+    align-items: flex-start;
+    margin-top: 5px;
+}
+
+.main-request .request__form .form__privacy {
+    margin: 0;
+}
+
+.main-request .request__form .form__privacy label {
+    font-size: 1.3em;
+    margin-bottom: 0.76em;
+}
+
+.main-request .request__form .privacy-text {
+    font-size: 1.3em;
+}
+
+.main-request .request__form .privacy-text span {
+    color: var(--color-accent);
+    font-size: 1.2em;
+}
+
+.main-request .request__form .form__submit {
+    width: fit-content;
+    margin-top: 10px;
+}
+
+@media (max-width: 1040px) {
+    .main-request .request__col-info {
+        width: 60%;
+    }
+
+    .main-request .request__col-form {
+        width: 40%;
+    }
+}
+
+@media (max-width: 920px) {
+    .main-request .request__row {
+        flex-direction: column;
+    }
+
+    .main-request .request__col-info,
+    .main-request .request__col-form {
+        width: 100%;
+    }
+
+    .main-request .request__col-form form {
+        max-width: unset;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-request .request__wrapper.padded-b {
+        padding-bottom: 50px;
+    }
+
+    .main-request .request__wrapper.padded-t {
+        padding-top: 50px;
+    }
+
+    .main-request .request__form .form__row {
+        flex-direction: column;
+    }
+
+    .main-request .request__form .form__row .form__col {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+
+    .main-request .request__form .form__row-bottom .form__submit {
+        margin-top: 10px;
+    }
+
+    .main-request .request__form .form__submit {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main-request .request__col-info {
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+
+    .main-request .request__col-info .info-wrap {
+        position: relative;
+        height: 233px;
+    }
+
+    .main-request .request__col-info .info-wrap:before {
+        content: unset;
+    }
+
+    .main-request .request__col-info .info__wrap {
+        padding: 30px;
+    }
+
+    .main-request .request__text {
+        margin-bottom: 0 !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .main-request .request__wrapper.padded-b {
+        padding-bottom: 40px;
+    }
+
+    .main-request .request__wrapper.padded-t {
+        padding-top: 40px;
+    }
+
+    .main-request .request__title {
+        font-size: 2em;
+        margin-bottom: 0.25em;
+    }
+
+    .main-request .request__subtitle {
+        font-size: 1.3em;
+    }
+
+    .main-request .request__text {
+        line-height: 1.38em;
+        font-size: 1.3em;
+        max-width: unset;
+    }
+
+    .main-request .request__wrapper.padded-b .request__text,
+    .main-request .request__wrapper.padded-t .request__text {
+        margin-bottom: 2.15em;
+    }
+
+    .main-request .request__form {
+        padding: 30px 10px;
+        padding-top: 20px;
+        border-top: 0;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .main-request .request__col-info .info__wrap {
+        padding: 30px 10px 20px;
+    }
+}

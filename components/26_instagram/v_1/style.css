@@ -1,0 +1,250 @@
+.main-instagram:has(.cards-1) .instagram__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-instagram:has(.cards-1) .instagram__info:has(.instagram__title.d-none) {
+    flex-direction: column-reverse;
+}
+
+.main-instagram:has(.cards-1) .instagram__info:has(.instagram__title.d-none) .instagram__subtitle {
+    order: 2;
+    margin-bottom: -20px;
+}
+
+.main-instagram:has(.cards-1) .instagram__wrapper.padded-b {
+    padding-bottom: 60px;
+}
+
+.main-instagram:has(.cards-1) .instagram__wrapper.padded-t {
+    padding-top: 60px;
+}
+
+.main-instagram:has(.cards-1) .instagram__wrapper.align-right .instagram__title,
+.main-instagram:has(.cards-1) .instagram__wrapper.align-right .instagram__subtitle {
+    text-align: right;
+    margin-left: auto;
+}
+
+.main-instagram:has(.cards-1) .instagram__wrapper.align-center .instagram__title,
+.main-instagram:has(.cards-1) .instagram__wrapper.align-center .instagram__subtitle {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-instagram:has(.cards-1) .instagram__wrapper.padded-b .instagram__text,
+.main-instagram:has(.cards-1) .instagram__wrapper.padded-t .instagram__text {
+    margin-bottom: 15px;
+}
+
+.main-instagram:has(.cards-1) .instagram__title {
+    font-size: 2.6em;
+    font-weight: 800;
+    line-height: 115%;
+    letter-spacing: -1%;
+    margin-bottom: 0.76em;
+    max-width: 571px;
+}
+
+.main-instagram:has(.cards-1) .instagram__subtitle {
+    font-size: 1.5em;
+    line-height: 1.26em;
+    text-transform: uppercase;
+}
+
+.main-instagram:has(.cards-1) .instagram__text {
+    font-size: 1.3em;
+    line-height: 130.5%;
+    margin-bottom: 2.15em;
+}
+
+.main-instagram:has(.cards-1) .instagram__text b {
+    font-weight: 700;
+}
+
+.main-instagram:has(.cards-1) .instagram__cards {
+    display: flex;
+    position: relative;
+}
+
+.main-instagram:has(.cards-1) .instagram__card.featured {
+    width: calc(40% - 2.5px);
+    height: 475px;
+}
+
+.main-instagram:has(.cards-1) .cards__row {
+    width: calc(60% - 2.5px);
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5px;
+    position: relative;
+}
+
+.main-instagram:has(.cards-1) .instagram__card {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-instagram:has(.cards-1) .cards__row .instagram__card {
+    width: calc((100% - 10px) / 3);
+    margin-right: 5px;
+    height: 235px;
+}
+
+.main-instagram:has(.cards-1) .cards__row .instagram__card:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.main-instagram:has(.cards-1) .cards__row .instagram__card:nth-of-type(1),
+.main-instagram:has(.cards-1) .cards__row .instagram__card:nth-of-type(2),
+.main-instagram:has(.cards-1) .cards__row .instagram__card:nth-of-type(3) {
+    margin-bottom: 5px;
+}
+
+.main-instagram:has(.cards-1) .instagram__card .card__wrap,
+.main-instagram:has(.cards-1) .instagram__card .card__image,
+.main-instagram:has(.cards-1) .instagram__card .card__wrap .img-cage {
+    width: 100%;
+    height: 100%;
+}
+
+.main-instagram:has(.cards-1) .instagram__card .card__wrap .img-cage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-instagram:has(.cards-1) .instagram__card .card-wrap {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: flex-end;
+    background: var(--color-light);
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.24s ease-in-out;
+    border: 1px solid var(--color-mid);
+    border-radius: 10px;
+    margin-top: -20px;
+}
+
+.main-instagram:has(.cards-1) .instagram__card:hover .card-wrap {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+    bottom: 0;
+}
+
+.main-instagram:has(.cards-1) .instagram__card .card__title {
+    font-size: 1.3em;
+    color: var(--settings-side-text);
+    line-height: 1.38em;
+}
+
+.main-instagram:has(.cards-1) .instagram__card .card__date {
+    font-size: 1.3em;
+    color: var(--settings-side-text);
+    margin-top: 1.15em;
+    line-height: 1.38em;
+}
+
+@media (max-width: 1100px) {
+    .main-instagram:has(.cards-1) .instagram__card .card-wrap {
+        padding: 20px;
+    }
+
+    .main-instagram:has(.cards-1) .instagram__card.featured {
+        width: calc((100% - 10px) / 2);
+        position: absolute;
+        height: auto;
+        aspect-ratio: 1;
+        top: 0;
+        left: 0;
+        margin-bottom: 10px;
+        z-index: 999;
+    }
+
+    .main-instagram:has(.cards-1) .cards__row {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .main-instagram:has(.cards-1) .cards__row .instagram__card {
+        width: calc((100% - 10px) / 2);
+        height: auto;
+        aspect-ratio: 1;
+        margin-bottom: 10px !important;
+        margin-right: 10px !important;
+    }
+
+    .main-instagram:has(.cards-1) .cards__row .instagram__card:nth-of-type(2n-1) {
+        margin-right: 0 !important;
+    }
+
+    .main-instagram:has(.cards-1) .cards__row .instagram__card:first-of-type {
+        margin-left: calc((100% - 10px) / 2 + 10px);
+    }
+}
+
+@media (max-width: 767px) {
+    .main-instagram:has(.cards-1) .instagram__wrapper.padded-b {
+        padding-bottom: 50px;
+    }
+
+    .main-instagram:has(.cards-1) .instagram__wrapper.padded-t {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .main-instagram:has(.cards-1) .instagram__wrapper.padded-b {
+        padding-bottom: 40px;
+    }
+
+    .main-instagram:has(.cards-1) .instagram__wrapper.padded-t {
+        padding-top: 40px;
+    }
+
+    .main-instagram:has(.cards-1) .instagram__title {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+
+    .main-instagram:has(.cards-1) .instagram__subtitle {
+        font-size: 1.3em;
+    }
+
+    .main-instagram:has(.cards-1) .instagram__text {
+        line-height: 1.38em;
+    }
+
+    .main-instagram:has(.cards-1) .instagram__wrapper.padded-b .instagram__text,
+    .main-instagram:has(.cards-1) .instagram__wrapper.padded-t .instagram__text {
+        margin-bottom: 2.15em;
+    }
+
+    .main-instagram:has(.cards-1) .instagram__card .card-wrap {
+        padding: 10px;
+    }
+
+    .main-instagram:has(.cards-1) .instagram__card .card__title {
+        font-size: 1.1em;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+    }
+
+    .main-instagram:has(.cards-1) .instagram__card .card__date {
+        font-size: 1.1em;
+    }
+}

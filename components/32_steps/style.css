@@ -1,0 +1,118 @@
+.main-steps {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.main-steps.bg-filled {
+    background: #f8f8f8;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.main-steps.bg-filled .steps__wrapper {
+    background: transparent;
+}
+
+.main-steps .steps__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-steps .steps__title {
+    font-size: 2.6em;
+    font-weight: 800;
+    line-height: 115%;
+    letter-spacing: -1%;
+    margin-bottom: 0.76em;
+    max-width: 571px;
+    position: relative;
+    z-index: 2;
+}
+
+.main-steps .steps__subtitle {
+    font-size: 1.5em;
+    line-height: 1.26em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+}
+
+.main-steps .steps__cards {
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.main-steps .steps__cards .cards__item {
+    position: relative;
+    flex: 1;
+    max-width: 403px;
+}
+
+.main-steps .steps__cards .cards__item:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 30.5px;
+    left: 30px;
+    border-bottom: 1px dashed #e5e5e5;
+}
+
+.main-steps .steps__cards .cards__item:last-of-type::before {
+    content: unset;
+}
+
+.main-steps .steps__cards .item-num {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+}
+
+.main-steps .steps__cards .item-num:before {
+    position: absolute;
+    content: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.35355 4.35355C4.54882 4.15829 4.54882 3.84171 4.35355 3.64645L1.17157 0.464466C0.97631 0.269204 0.659728 0.269204 0.464466 0.464466C0.269204 0.659728 0.269204 0.976311 0.464466 1.17157L3.29289 4L0.464466 6.82843C0.269204 7.02369 0.269204 7.34027 0.464466 7.53553C0.659729 7.7308 0.976311 7.7308 1.17157 7.53553L4.35355 4.35355ZM3 4.5L3.25 4.5L3.25 3.5L3 3.5L3 4.5ZM3.75 4.5L4 4.5L4 3.5L3.75 3.5L3.75 4.5Z' fill='%23E5E5E5'/%3E%3C/svg%3E");
+    width: 5px;
+    height: 8px;
+    top: 20px;
+    left: -4px;
+}
+
+.main-steps .steps__cards .cards__item:first-of-type .item-num::before {
+    content: unset;
+}
+
+.main-steps .steps__cards .item-title {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.main-steps .steps__cards .item-text {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #777777;
+}
+
+@media (max-width: 900px) {
+    .main-steps .steps__cards {
+        flex-direction: column;
+    }
+
+    .main-steps .steps__cards .cards__item {
+        max-width: 100%;
+    }
+
+    .main-steps .steps__cards .cards__item:before,
+    .main-steps .steps__cards .item-num:before {
+        content: unset;
+    }
+}

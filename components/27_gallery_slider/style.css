@@ -1,0 +1,274 @@
+.main-gallery:has(.cards-3) .gallery__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-gallery:has(.cards-3) .gallery__info:has(.gallery__title.d-none) {
+    flex-direction: column-reverse;
+}
+
+.main-gallery:has(.cards-3) .gallery__info:has(.gallery__title.d-none) .gallery__subtitle {
+    order: 2;
+    margin-bottom: -20px;
+}
+
+.main-gallery:has(.cards-3) .gallery__wrapper.padded-b {
+    padding-bottom: 60px;
+}
+
+.main-gallery:has(.cards-3) .gallery__wrapper.padded-t {
+    padding-top: 60px;
+}
+
+.main-gallery:has(.cards-3) .gallery__wrapper.padded-b .gallery__text,
+.main-gallery:has(.cards-3) .gallery__wrapper.padded-t .gallery__text {
+    margin-bottom: 15px;
+}
+
+.main-gallery:has(.cards-3) .gallery__wrapper.align-right .gallery__title,
+.main-gallery:has(.cards-3) .gallery__wrapper.align-right .gallery__subtitle {
+    text-align: right;
+    margin-left: auto;
+}
+
+.main-gallery:has(.cards-3) .gallery__wrapper.align-center .gallery__title,
+.main-gallery:has(.cards-3) .gallery__wrapper.align-center .gallery__subtitle {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-gallery:has(.cards-3) .gallery__title {
+    font-size: 2.6em;
+    font-weight: 800;
+    line-height: 115%;
+    letter-spacing: -1%;
+    margin-bottom: 0.76em;
+    max-width: 571px;
+}
+
+.main-gallery:has(.cards-3) .gallery__subtitle {
+    font-size: 1.5em;
+    line-height: 1.26em;
+    text-transform: uppercase;
+}
+
+.main-gallery:has(.cards-3) .gallery__text {
+    font-size: 1.3em;
+    line-height: 130.5%;
+    margin-bottom: 2.15em;
+}
+
+.main-gallery:has(.cards-3) .gallery__text b {
+    font-weight: 700;
+}
+
+.main-gallery:has(.cards-3) .gallery__cards {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.main-gallery:has(.cards-3) .gallery__card {
+    height: 582px;
+    position: relative;
+    border-bottom: 1px solid var(--color-mid);
+}
+
+.main-gallery:has(.cards-3) .gallery__card .card__wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.main-gallery:has(.cards-3) .gallery__card .card__image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-gallery:has(.cards-3) .gallery__card .card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.main-gallery .cards-3 .gallery__card .card__lupa {
+    padding: 13px;
+    padding-bottom: 14px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.31);
+    transition: background 0.24s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.24s ease-in-out;
+}
+
+.main-gallery .cards-3 .gallery__card .card__lupa svg {
+    pointer-events: none;
+}
+
+.main-gallery .cards-3 .gallery__card .card__lupa:hover {
+    background: var(--color-accent);
+    cursor: pointer;
+}
+
+.main-gallery .cards-3 .gallery__card:hover .card__lupa {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+}
+
+.main-gallery .cards-3 .slick-dots {
+    display: flex;
+    height: 90px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: 10px;
+}
+
+.main-gallery .cards-3 .slick-dots li {
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 1px solid var(--color-mid);
+    outline-offset: -1px;
+    transition: all 0.24s ease-in-out;
+    width: calc((100% - 11 * 10px) / 12);
+    min-width: 90px;
+    background: var(--color-light);
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.main-gallery .cards-3 .slick-dots li span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-gallery .cards-3 .slick-dots li span img {
+    height: 100%;
+    width: auto;
+}
+
+.main-gallery .cards-3 .slick-dots li.slick-active {
+    outline: 2px solid var(--color-accent);
+    outline-offset: -2px;
+}
+
+.main-gallery .cards-3 .gallery__arrow {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    border: 1px solid var(--color-mid);
+    position: absolute;
+    transition: box-shadow 0.25s ease-in-out;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -18px;
+    z-index: 99;
+}
+
+.main-gallery:has(.cards-3) .gallery__arrow.slick-disabled {
+    background: var(--color-mid);
+}
+
+.main-gallery:has(.cards-3) .gallery__arrow.slick-disabled svg {
+    filter: grayscale(1);
+}
+
+.main-gallery:has(.cards-3) .gallery__arrow svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-gallery:has(.cards-3) .gallery__arrow svg path {
+    fill: var(--color-accent);
+}
+
+.main-gallery:has(.cards-3) .gallery__arrow:hover {
+    cursor: pointer;
+    box-shadow: var(--dropdown-hover);
+}
+
+.main-gallery:has(.cards-3) .gallery__arrow.slick-disabled:hover {
+    box-shadow: unset;
+    cursor: unset;
+}
+
+.main-gallery:has(.cards-3) .gallery__arrow-left {
+    right: unset;
+    left: -18px;
+}
+
+@media (max-width: 1240px) {
+    .main-gallery .cards-3 .gallery__arrow {
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-gallery:has(.cards-3) .gallery__wrapper.padded-b {
+        padding-bottom: 50px;
+    }
+
+    .main-gallery:has(.cards-3) .gallery__wrapper.padded-t {
+        padding-top: 50px;
+    }
+
+    .main-gallery:has(.cards-3) .gallery__card {
+        height: 290px;
+    }
+
+    .main-gallery .cards-3 .slick-dots li {
+        min-width: 50px;
+        width: calc((100% - 10px * 4) / 5);
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .main-gallery .cards-3 .slick-dots {
+        height: fit-content;
+        max-height: 70px;
+    }
+}
+
+@media (max-width: 575px) {
+    .main-gallery:has(.cards-3) .gallery__wrapper.padded-b {
+        padding-bottom: 40px;
+    }
+
+    .main-gallery:has(.cards-3) .gallery__wrapper.padded-t {
+        padding-top: 40px;
+    }
+
+    .main-gallery:has(.cards-3) .gallery__title {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    .main-gallery:has(.cards-3) .gallery__subtitle {
+        font-size: 1.3em;
+    }
+
+    .main-gallery:has(.cards-3) .gallery__text {
+        line-height: 1.38em;
+    }
+
+    .main-gallery:has(.cards-3) .gallery__wrapper.padded-b .gallery__text,
+    .main-gallery:has(.cards-3) .gallery__wrapper.padded-t .gallery__text {
+        margin-bottom: 2.15em;
+    }
+}

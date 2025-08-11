@@ -1,0 +1,321 @@
+.main-info .info__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-info .info__info:has(.info__title.d-none) {
+    flex-direction: column-reverse;
+}
+
+.main-info .info__info:has(.info__title.d-none) .info__subtitle {
+    order: 2;
+    margin-bottom: -20px;
+}
+
+.main-info .info__wrapper.padded-b {
+    padding-bottom: 60px;
+}
+
+.main-info .info__wrapper.padded-t {
+    padding-top: 60px;
+}
+
+.main-info .info__row {
+    display: flex;
+}
+
+.main-info .info__info {
+    width: calc(100% - 53.5%);
+    height: fit-content;
+    position: sticky;
+    top: 80px;
+}
+
+.main-info .info__info .info__image {
+    display: none;
+}
+
+.main-info .info__col.image {
+    width: 53.5%;
+    position: sticky;
+    top: 80px;
+    height: fit-content;
+    padding-left: 55px;
+}
+
+.main-info .info__row.right .info__col.image {
+    padding-left: 0;
+    padding-right: 55px;
+}
+
+.main-info .info__title {
+    font-size: 2.6em;
+    font-weight: 800;
+    line-height: 115%;
+    letter-spacing: -1%;
+    margin-bottom: 0.76em;
+    max-width: 571px;
+    position: relative;
+    z-index: 2;
+}
+
+.main-info .info__subtitle {
+    font-size: 1.5em;
+    line-height: 1.26em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+}
+
+.main-info .info__text {
+    font-size: 1.3em;
+    line-height: 110.5%;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 1.54em;
+}
+
+.main-info .info__list ul li {
+    list-style: none;
+    color: var(--settings-side-text);
+    margin-bottom: 7px;
+    font-size: 1.3em;
+    line-height: 1.38em;
+    padding-left: 7px;
+    position: relative;
+    display: none;
+}
+
+.main-info .info__list ul li:nth-of-type(-n + 3) {
+    display: block;
+}
+
+.main-info .info__list.opened ul li {
+    display: block;
+}
+
+.main-info .info__list .list-more {
+    cursor: pointer;
+}
+
+.main-info .info__list .list-more svg {
+    transform: rotate(180deg);
+    transition: all 0.24s ease-in-out;
+    margin-bottom: -2px;
+}
+
+.main-info .info__list.opened .list-more svg {
+    transform: none;
+}
+
+.main-info .info__list ul li:before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    content: "";
+    left: 0;
+}
+
+.main-info .info__list ul li:last-of-type {
+    margin-bottom: 0;
+}
+
+.main-info .info__list .list-more {
+    margin-top: 12px;
+    display: none;
+    align-items: center;
+}
+
+.main-info .info__list .list-more span {
+    color: var(--color-accent);
+    font-size: 1.2em;
+    margin-right: 6px;
+    display: block;
+}
+
+.main-info .info__list:has(li:nth-of-type(4)) .list-more {
+    display: flex;
+}
+
+.main-info .info__price {
+    margin: 30px 0;
+}
+
+.main-info:has(.info__price.d-none) .info__btn {
+    margin-top: 30px;
+}
+
+.main-info .info__price .price__col {
+    display: flex;
+    align-items: center;
+}
+
+.main-info .info__price .price__col span {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.main-info .info__price .price__col span.discount {
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 3px 8px;
+    border-radius: 2px;
+    background: #fed637;
+    color: var(--color-dark-fixed);
+    margin-left: 13px;
+}
+
+.main-info .info__price .price__col.old span {
+    font-size: 1.4em;
+    color: var(--settings-side-text);
+    text-decoration: line-through;
+    font-weight: 400;
+}
+
+.main-info .info__info .info__image {
+    display: none;
+}
+
+.main-info .info__image {
+    width: 100%;
+    height: 384px;
+}
+
+.main-info .info__image .image-cage {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-info .info__image .image-cage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-info .info__content {
+    margin-top: 20px;
+}
+
+.main-info .info__content p {
+    font-size: 13px;
+    line-height: 130.5%;
+    margin-bottom: 0.76em;
+}
+
+.main-info .info__content p:last-of-type {
+    margin-bottom: 0;
+}
+
+.main-info .info__more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.main-info .info__more .text {
+    font-size: 1.4em;
+    color: var(--settings-side-text);
+    transition: all 0.24s ease-in-out;
+    line-height: 1em;
+    font-weight: 600;
+}
+
+.main-info .info__more:hover .text {
+    color: var(--color-accent);
+}
+
+.main-info .info__more svg path {
+    transition: all 0.24s ease-in-out;
+}
+
+.main-info .info__more:hover svg path {
+    fill: var(--color-accent);
+}
+
+@media (max-width: 850px) {
+    .main-info .info__row {
+        flex-direction: column;
+    }
+
+    .main-info .info__row .info__col {
+        width: 100%;
+        padding: 0;
+    }
+
+    .main-info .info__info {
+        position: relative;
+        top: 0;
+        margin-bottom: 20px;
+    }
+
+    .main-info .info__image {
+        display: none;
+    }
+
+    .main-info .info__info {
+        display: block;
+    }
+
+    .main-info .info__info .info__image {
+        display: block;
+        margin-bottom: 15px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 279/125;
+    }
+
+    .main-info .info__list.opened ul li {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-info .info__wrapper.padded-b {
+        padding-bottom: 50px;
+    }
+
+    .main-info .info__wrapper.padded-t {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .main-info .info__wrapper.padded-b {
+        padding-bottom: 40px;
+    }
+
+    .main-info .info__wrapper.padded-t {
+        padding-top: 40px;
+    }
+
+    .main-info .info__title {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+
+    .main-info .info__subtitle {
+        font-size: 1.3em;
+    }
+
+    .main-info .info__text {
+        line-height: 1.38em;
+    }
+
+    .main-info .info__price .price__col span {
+        font-size: 1.7em;
+    }
+}

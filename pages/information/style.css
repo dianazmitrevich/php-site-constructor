@@ -1,0 +1,43 @@
+.page-title {
+    margin-bottom: 0.76em;
+}
+
+.content__wrapper {
+    margin-bottom: 60px;
+}
+
+.content .page-body p,
+.content .page-body h2,
+.content .page-body .inner-title,
+.content .page-body h3,
+.content .page-body h4,
+.content .page-body ol,
+.content .page-body ul,
+.content .page-body .accordion-items,
+.content .page-body .table-wrap {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.content .page-body .main-btn {
+    margin-left: 0;
+}
+
+.content .page-body .table-wrap::-webkit-scrollbar-thumb {
+    border-width: 0;
+}
+
+.content .page-body .table-overlay::before,
+.content .page-body .table-overlay::after {
+    content: unset;
+}
+
+.content .page-body table {
+    width: 100%;
+}
+
+@media (max-width: 575px) {
+    .content__wrapper {
+        margin-bottom: 40px;
+    }
+}

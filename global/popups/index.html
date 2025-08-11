@@ -1,0 +1,1753 @@
+<div class="popups">
+    <div class="call-request__popup popup">
+        <div class="popup-wrap"></div>
+        <div class="popup__wrap wrap">
+            <div class="popup__btn">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10.5923 9.00019L17.6709 1.92162C18.1107 1.48221 18.1107 0.769247 17.6709 0.329838C17.2311 -0.109946 16.5189 -0.109946 16.0791 0.329838L9.00056 7.40841L1.92162 0.329838C1.48183 -0.109946 0.769622 -0.109946 0.329838 0.329838C-0.109946 0.769247 -0.109946 1.48221 0.329838 1.92162L7.40878 9.00019L0.329838 16.0788C-0.109946 16.5182 -0.109946 17.2311 0.329838 17.6705C0.54973 17.8901 0.837916 18 1.12573 18C1.41354 18 1.70172 17.8901 1.92162 17.6702L9.00056 10.5916L16.0791 17.6702C16.299 17.8901 16.5872 18 16.875 18C17.1628 18 17.451 17.8901 17.6709 17.6702C18.1107 17.2308 18.1107 16.5178 17.6709 16.0784L10.5923 9.00019Z"
+                        fill="#B0B0B0" />
+                </svg>
+            </div>
+            <div class="popup__title">Оставить заявку</div>
+            <form action="" class="popup__form d_form">
+                <div class="form__field">
+                    <label for="call_form-name">Ваше имя<span>*</span></label>
+                    <input pattern="[A-Za-zА-Яа-яЁё\s]+" required type="text" placeholder="Введите имя"
+                        id="call_form-name">
+                    <div class="field-invalid">
+                        <div class="invalid-wrap">
+                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_8_22180)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.80957 0C3.67551 0 0.30957 3.36594 0.30957 7.5C0.30957 11.6341 3.67551 15 7.80957 15C11.9436 15 15.3096 11.6341 15.3096 7.5C15.3096 3.36594 11.9436 0 7.80957 0ZM7.80957 1.36364C11.2067 1.36364 13.9459 4.1029 13.9459 7.5C13.9459 10.8971 11.2067 13.6364 7.80957 13.6364C4.41247 13.6364 1.67321 10.8971 1.67321 7.5C1.67321 4.1029 4.41247 1.36364 7.80957 1.36364ZM7.79893 3.39977C7.61833 3.40259 7.44623 3.47694 7.3204 3.60652C7.19456 3.7361 7.12528 3.9103 7.12775 4.09091V8.59064C7.12647 8.68099 7.14317 8.77069 7.17686 8.85454C7.21055 8.93838 7.26057 9.01469 7.32401 9.07903C7.38745 9.14337 7.46304 9.19447 7.5464 9.22934C7.62976 9.26421 7.71921 9.28217 7.80957 9.28217C7.89993 9.28217 7.98939 9.26421 8.07274 9.22934C8.1561 9.19447 8.23169 9.14337 8.29513 9.07903C8.35857 9.01469 8.40859 8.93838 8.44228 8.85454C8.47598 8.77069 8.49267 8.68099 8.49139 8.59064V4.09091C8.49264 3.99969 8.47557 3.90915 8.4412 3.82464C8.40682 3.74014 8.35584 3.66339 8.29127 3.59894C8.2267 3.5345 8.14985 3.48366 8.06528 3.44945C7.98071 3.41524 7.89015 3.39834 7.79893 3.39977ZM7.80957 10.2273C7.62874 10.2273 7.45532 10.2991 7.32745 10.427C7.19959 10.5548 7.12775 10.7283 7.12775 10.9091C7.12775 11.0899 7.19959 11.2633 7.32745 11.3912C7.45532 11.5191 7.62874 11.5909 7.80957 11.5909C7.9904 11.5909 8.16382 11.5191 8.29169 11.3912C8.41955 11.2633 8.49139 11.0899 8.49139 10.9091C8.49139 10.7283 8.41955 10.5548 8.29169 10.427C8.16382 10.2991 7.9904 10.2273 7.80957 10.2273Z"
+                                        fill="#FF0000" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_8_22180">
+                                        <rect width="15" height="15" fill="white" transform="translate(0.30957)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <p>Некорректное имя</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__field form-phone">
+                    <label for="call_form-phone">Телефон<span>*</span></label>
+                    <input pattern="\+375\s\(\d{2}\)\s\d{3}-\d{2}-\d{2}" required type="tel"
+                        placeholder="+375 (__) ___-__-__" id="call_form-phone">
+                    <div class="field-invalid">
+                        <div class="invalid-wrap">
+                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_8_22180)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.80957 0C3.67551 0 0.30957 3.36594 0.30957 7.5C0.30957 11.6341 3.67551 15 7.80957 15C11.9436 15 15.3096 11.6341 15.3096 7.5C15.3096 3.36594 11.9436 0 7.80957 0ZM7.80957 1.36364C11.2067 1.36364 13.9459 4.1029 13.9459 7.5C13.9459 10.8971 11.2067 13.6364 7.80957 13.6364C4.41247 13.6364 1.67321 10.8971 1.67321 7.5C1.67321 4.1029 4.41247 1.36364 7.80957 1.36364ZM7.79893 3.39977C7.61833 3.40259 7.44623 3.47694 7.3204 3.60652C7.19456 3.7361 7.12528 3.9103 7.12775 4.09091V8.59064C7.12647 8.68099 7.14317 8.77069 7.17686 8.85454C7.21055 8.93838 7.26057 9.01469 7.32401 9.07903C7.38745 9.14337 7.46304 9.19447 7.5464 9.22934C7.62976 9.26421 7.71921 9.28217 7.80957 9.28217C7.89993 9.28217 7.98939 9.26421 8.07274 9.22934C8.1561 9.19447 8.23169 9.14337 8.29513 9.07903C8.35857 9.01469 8.40859 8.93838 8.44228 8.85454C8.47598 8.77069 8.49267 8.68099 8.49139 8.59064V4.09091C8.49264 3.99969 8.47557 3.90915 8.4412 3.82464C8.40682 3.74014 8.35584 3.66339 8.29127 3.59894C8.2267 3.5345 8.14985 3.48366 8.06528 3.44945C7.98071 3.41524 7.89015 3.39834 7.79893 3.39977ZM7.80957 10.2273C7.62874 10.2273 7.45532 10.2991 7.32745 10.427C7.19959 10.5548 7.12775 10.7283 7.12775 10.9091C7.12775 11.0899 7.19959 11.2633 7.32745 11.3912C7.45532 11.5191 7.62874 11.5909 7.80957 11.5909C7.9904 11.5909 8.16382 11.5191 8.29169 11.3912C8.41955 11.2633 8.49139 11.0899 8.49139 10.9091C8.49139 10.7283 8.41955 10.5548 8.29169 10.427C8.16382 10.2991 7.9904 10.2273 7.80957 10.2273Z"
+                                        fill="#FF0000" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_8_22180">
+                                        <rect width="15" height="15" fill="white" transform="translate(0.30957)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <p>Некорректный номер телефона</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__privacy">
+                    <input type="checkbox" name="" id="call_form-privacy">
+                    <label for="call_form-privacy">Я согласен(на) на <a>обработку персональных данных</a></label>
+                </div>
+                <div class="form__submit">
+                    <input type="submit" value="Отправить" class="main-cta">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="info-page__popup popup information-content">
+        <div class="popup-wrap"></div>
+        <div class="popup__wrap wrap container">
+            <div class="wrap">
+                <div class="popup__btn">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.5923 9.00019L17.6709 1.92162C18.1107 1.48221 18.1107 0.769247 17.6709 0.329838C17.2311 -0.109946 16.5189 -0.109946 16.0791 0.329838L9.00056 7.40841L1.92162 0.329838C1.48183 -0.109946 0.769622 -0.109946 0.329838 0.329838C-0.109946 0.769247 -0.109946 1.48221 0.329838 1.92162L7.40878 9.00019L0.329838 16.0788C-0.109946 16.5182 -0.109946 17.2311 0.329838 17.6705C0.54973 17.8901 0.837916 18 1.12573 18C1.41354 18 1.70172 17.8901 1.92162 17.6702L9.00056 10.5916L16.0791 17.6702C16.299 17.8901 16.5872 18 16.875 18C17.1628 18 17.451 17.8901 17.6709 17.6702C18.1107 17.2308 18.1107 16.5178 17.6709 16.0784L10.5923 9.00019Z"
+                            fill="#B0B0B0" />
+                    </svg>
+                </div>
+                <div class="popup__title">Информационная страница</div>
+                <div class="wrap__body body">
+                    <p>Мы вынуждены отталкиваться от того, что начало <a href="">повседневной работы</a> по формированию
+                        позиции создаёт необходимость включения в производственный план целого ряда внеочередных
+                        мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности.
+                        Равным образом, <b>глубокий уровень погружения</b> предполагает независимые способы реализации
+                        <a href="">форм воздействия</a>. И нет сомнений, что действия представителей оппозиции, вне
+                        зависимости от их уровня, <del>должны быть представлены</del> в исключительно положительном.</p>
+                    <h2>Header 2</h2>
+                    <p>Мы вынуждены отталкиваться от того, что начало повседневной работы по формированию позиции
+                        создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с
+                        учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. Равным
+                        образом, глубокий уровень погружения предполагает независимые способы реализации форм
+                        воздействия. И нет сомнений, что действия представителей оппозиции, вне зависимости от их
+                        уровня, должны быть представлены в исключительно положительном.</p>
+                    <h3>Header 3</h3>
+                    <p>Мы вынуждены отталкиваться от того, что начало повседневной работы по формированию позиции
+                        создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с
+                        учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. Равным
+                        образом, глубокий уровень погружения предполагает независимые способы реализации форм
+                        воздействия. И нет сомнений, что действия представителей оппозиции, вне зависимости от их
+                        уровня, должны быть представлены в исключительно положительном.</p>
+                    <h4>Header 4</h4>
+                    <p>Мы вынуждены отталкиваться от того, что начало повседневной работы по формированию позиции
+                        создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с
+                        учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. Равным
+                        образом, глубокий уровень погружения предполагает независимые способы реализации форм
+                        воздействия. И нет сомнений, что действия представителей оппозиции, вне зависимости от их
+                        уровня, должны быть представлены в исключительно положительном.</p>
+                    <div class="inner-title">Список нумерованный</div>
+                    <p>Мы вынуждены отталкиваться от того, что начало повседневной работы по формированию позиции
+                        создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с
+                        учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. Равным
+                        образом, глубокий уровень погружения предполагает независимые способы реализации форм
+                        воздействия. И нет сомнений, что действия представителей оппозиции, вне зависимости от их
+                        уровня, должны быть представлены в исключительно положительном.</p>
+                    <p>И нет сомнений, что действия представителей оппозиции, вне зависимости от их уровня, должны быть
+                        представлены в исключительно положительном:</p>
+                    <ol>
+                        <li>Один</li>
+                        <li>Два</li>
+                        <li>Три <ol>
+                                <li>Далеко-далеко за словесными горами</li>
+                                <li>Далеко-далеко за словесными горами</li>
+                                <li>Далеко-далеко за словесными горами</li>
+                            </ol>
+                        </li>
+                        <li>Четыре</li>
+                    </ol>
+                    <p>Мы вынуждены отталкиваться от того, что начало повседневной работы по формированию позиции
+                        создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с
+                        учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. Равным
+                        образом, глубокий уровень погружения предполагает независимые способы реализации форм
+                        воздействия. И нет сомнений, что действия представителей оппозиции, вне зависимости от их
+                        уровня, должны быть представлены в исключительно положительном.</p>
+                    <p>И нет сомнений, что действия представителей оппозиции, вне зависимости от их уровня, должны быть
+                        представлены в исключительно положительном:</p>
+                    <ul>
+                        <li>Пункт 1</li>
+                        <li>Пункт 2 <ul>
+                                <li>Пункт 2.1 с длинным названием в 2 и более строки. И нет сомнений, что действия
+                                    представителей оппозиции, вне зависимости от их уровня, должны быть представлены в
+                                    исключительно положительном:</li>
+                                <li>Пункт 2.2</li>
+                                <li>Пункт 2.3</li>
+                            </ul>
+                        </li>
+                        <li>Пункт 3</li>
+                    </ul>
+                    <p> Мы вынуждены отталкиваться от того, что начало повседневной работы по формированию позиции
+                        создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с
+                        учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. Равным
+                        образом, глубокий уровень погружения предполагает независимые способы реализации форм
+                        воздействия. И нет сомнений, что действия представителей оппозиции, вне зависимости от их
+                        уровня, должны быть представлены в исключительно положительном. </p>
+                    <div class="accordion-items">
+                        <div class="accordion-wrap">
+                            <div class="accordion-head">
+                                <span>Какой срок возврата?</span>
+                                <svg class="accordion-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 0.998326L4.85714 4.85547L8.71429 0.998326" stroke="#666666"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="accordion accordion-open-one">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Facilisi morbi tempus iaculis urna.
+                                    Tempus quam pellentesque nec nam aliquam sem et tortor. In mollis nunc sed id. Orci
+                                    eu lobortis elementum nibh tellus molestie. Suscipit tellus mauris a diam maecenas.
+                                    Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Pretium lectus
+                                    quam id leo.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Facilisi morbi tempus iaculis urna.
+                                    Tempus quam pellentesque nec nam aliquam sem et tortor. In mollis nunc sed id. Orci
+                                    eu lobortis elementum nibh tellus molestie. Suscipit tellus mauris a diam maecenas.
+                                    Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Pretium lectus
+                                    quam id leo.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-wrap">
+                            <div class="accordion-head">
+                                <span>Какой срок возврата?</span>
+                                <svg class="accordion-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 0.998326L4.85714 4.85547L8.71429 0.998326" stroke="#666666"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="accordion accordion-open-one">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Facilisi morbi tempus iaculis urna.
+                                    Tempus quam pellentesque nec nam aliquam sem et tortor. In mollis nunc sed id. Orci
+                                    eu lobortis elementum nibh tellus molestie. Suscipit tellus mauris a diam maecenas.
+                                    Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Pretium lectus
+                                    quam id leo.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-wrap">
+                            <div class="accordion-head">
+                                <span>Заказывали сайн интернем-магазина. все очень круто сделали. Замечательные
+                                    сотрудники, правильно все понимают, советуют как лучше и еще чаем угощают. Всем
+                                    очень доволен, большое вам спасибо! Обращайтесь в данную компанию, чтобы сделать
+                                    сайт - не пожалеете?</span>
+                                <svg class="accordion-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 0.998326L4.85714 4.85547L8.71429 0.998326" stroke="#666666"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="accordion accordion-open-one">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Facilisi morbi tempus iaculis urna.
+                                    Tempus quam pellentesque nec nam aliquam sem et tortor. In mollis nunc sed id. Orci
+                                    eu lobortis elementum nibh tellus molestie. Suscipit tellus mauris a diam maecenas.
+                                    Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Pretium lectus
+                                    quam id leo.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Facilisi morbi tempus iaculis urna.
+                                    Tempus quam pellentesque nec nam aliquam sem et tortor. In mollis nunc sed id. Orci
+                                    eu lobortis elementum nibh tellus molestie. Suscipit tellus mauris a diam maecenas.
+                                    Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Pretium lectus
+                                    quam id leo.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-wrap">
+                            <div class="accordion-head">
+                                <span>Какие причины возврата?</span>
+                                <svg class="accordion-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 0.998326L4.85714 4.85547L8.71429 0.998326" stroke="#666666"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="accordion accordion-open-one accordion-opened">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Facilisi morbi tempus iaculis urna.
+                                    Tempus quam pellentesque nec nam aliquam sem et tortor. In mollis nunc sed id. Orci
+                                    eu lobortis elementum nibh tellus molestie. Suscipit tellus mauris a diam maecenas.
+                                    Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Pretium lectus
+                                    quam id leo.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Facilisi morbi tempus iaculis urna.
+                                    Tempus quam pellentesque nec nam aliquam sem et tortor. In mollis nunc sed id. Orci
+                                    eu lobortis elementum nibh tellus molestie. Suscipit tellus mauris a diam maecenas.
+                                    Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Pretium lectus
+                                    quam id leo.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-wrap">
+                            <div class="accordion-head">
+                                <span>Какой срок возврата?</span>
+                                <svg class="accordion-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 0.998326L4.85714 4.85547L8.71429 0.998326" stroke="#666666"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="accordion accordion-open-one">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Facilisi morbi tempus iaculis urna.
+                                    Tempus quam pellentesque nec nam aliquam sem et tortor. In mollis nunc sed id. Orci
+                                    eu lobortis elementum nibh tellus molestie. Suscipit tellus mauris a diam maecenas.
+                                    Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Pretium lectus
+                                    quam id leo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Таблица с рамкой</h2>
+                    <p>Мы вынуждены отталкиваться от того, что начало повседневной работы по формированию позиции
+                        создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с
+                        учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. Равным
+                        образом, глубокий уровень погружения предполагает независимые способы реализации форм
+                        воздействия. И нет сомнений, что действия представителей оппозиции, вне зависимости от их
+                        уровня, должны быть представлены в исключительно положительном.</p>
+                    <div class="table-container">
+                        <div class="table-wrap">
+                            <table>
+                                <thead>
+                                    <th>№</th>
+                                    <th>Имя</th>
+                                    <th>Фамилия</th>
+                                    <th>Логин</th>
+                                    <th>Пароль</th>
+                                    <th>Имя</th>
+                                    <th>Фамилия</th>
+                                    <th>Логин</th>
+                                    <th>Логин</th>
+                                    <th>Пароль</th>
+                                    <th>Имя</th>
+                                    <th>Фамилия</th>
+                                    <th>Логин</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Пароль</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Логин</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Логин</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Пароль</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Логин</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Логин</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Пароль</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Логин</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Логин</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Пароль</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Логин</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Логин</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Пароль</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Логин</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Логин</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Пароль</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Логин</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Логин</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-overlay"></div>
+                    </div>
+                    <h2>Таблица с рамкой</h2>
+                    <p>Мы вынуждены отталкиваться от того, что начало повседневной работы по формированию позиции
+                        создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с
+                        учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. Равным
+                        образом, глубокий уровень погружения предполагает независимые способы реализации форм
+                        воздействия. И нет сомнений, что действия представителей оппозиции, вне зависимости от их
+                        уровня, должны быть представлены в исключительно положительном.</p>
+                    <div class="table-container">
+                        <div class="table-wrap table-striped">
+                            <table>
+                                <thead>
+                                    <th>№</th>
+                                    <th>Имя</th>
+                                    <th>Фамилия</th>
+                                    <th>Логин</th>
+                                    <th>Пароль</th>
+                                    <th>Имя</th>
+                                    <th>Фамилия</th>
+                                    <th>Логин</th>
+                                    <th>Логин</th>
+                                    <th>Пароль</th>
+                                    <th>Имя</th>
+                                    <th>Фамилия</th>
+                                    <th>Логин</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Пароль</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Логин</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Логин</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Пароль</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Логин</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Логин</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Пароль</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Логин</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Логин</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Пароль</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Логин</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Логин</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Пароль</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Логин</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Логин</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Пароль</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Логин</td>
+                                        <td>Имя</td>
+                                        <td>Фамилия</td>
+                                        <td>Логин</td>
+                                        <td>Логин</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-overlay"></div>
+                    </div>
+                    <h2>SEO-текст</h2>
+                    <p>Мы вынуждены отталкиваться от того, что начало повседневной работы по формированию позиции
+                        создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с
+                        учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. Равным
+                        образом, глубокий уровень погружения предполагает независимые способы реализации форм
+                        воздействия. И нет сомнений, что действия представителей оппозиции, вне зависимости от их
+                        уровня, должны быть представлены в исключительно положительном.</p>
+                    <a class="main-btn cta" data-action="form-example" data-url="ajax/popup.php" data-id="1">Кнопка на
+                        форму</a>
+                    <p>Мы вынуждены отталкиваться от того, что начало повседневной работы по формированию позиции
+                        создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с
+                        учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. Равным
+                        образом, глубокий уровень погружения предполагает независимые способы реализации форм
+                        воздействия. И нет сомнений, что действия представителей оппозиции, вне зависимости от их
+                        уровня, должны быть представлены в исключительно положительном.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-example__popup popup">
+        <div class="popup-wrap"></div>
+        <div class="popup__wrap wrap container">
+            <div class="wrap">
+                <div class="popup__btn">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.5923 9.00019L17.6709 1.92162C18.1107 1.48221 18.1107 0.769247 17.6709 0.329838C17.2311 -0.109946 16.5189 -0.109946 16.0791 0.329838L9.00056 7.40841L1.92162 0.329838C1.48183 -0.109946 0.769622 -0.109946 0.329838 0.329838C-0.109946 0.769247 -0.109946 1.48221 0.329838 1.92162L7.40878 9.00019L0.329838 16.0788C-0.109946 16.5182 -0.109946 17.2311 0.329838 17.6705C0.54973 17.8901 0.837916 18 1.12573 18C1.41354 18 1.70172 17.8901 1.92162 17.6702L9.00056 10.5916L16.0791 17.6702C16.299 17.8901 16.5872 18 16.875 18C17.1628 18 17.451 17.8901 17.6709 17.6702C18.1107 17.2308 18.1107 16.5178 17.6709 16.0784L10.5923 9.00019Z"
+                            fill="#B0B0B0" />
+                    </svg>
+                </div>
+                <div class="popup__title">Пример формы</div>
+                <div class="popup__subtitle">Описание примера формы очень длинное описание в две или три строки</div>
+                <form action="" class="popup__form d_form">
+                    <div class="form__field">
+                        <label for="">Текстовое поле<span>*</span></label>
+                        <input pattern="[A-Za-zА-Яа-яЁё\s]+" required type="text" placeholder="Введите имя"
+                            value="Автозаполнение строки" id="call_form-name" disabled>
+                        <div class="field-invalid">
+                            <div class="invalid-wrap">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_8_22180)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.80957 0C3.67551 0 0.30957 3.36594 0.30957 7.5C0.30957 11.6341 3.67551 15 7.80957 15C11.9436 15 15.3096 11.6341 15.3096 7.5C15.3096 3.36594 11.9436 0 7.80957 0ZM7.80957 1.36364C11.2067 1.36364 13.9459 4.1029 13.9459 7.5C13.9459 10.8971 11.2067 13.6364 7.80957 13.6364C4.41247 13.6364 1.67321 10.8971 1.67321 7.5C1.67321 4.1029 4.41247 1.36364 7.80957 1.36364ZM7.79893 3.39977C7.61833 3.40259 7.44623 3.47694 7.3204 3.60652C7.19456 3.7361 7.12528 3.9103 7.12775 4.09091V8.59064C7.12647 8.68099 7.14317 8.77069 7.17686 8.85454C7.21055 8.93838 7.26057 9.01469 7.32401 9.07903C7.38745 9.14337 7.46304 9.19447 7.5464 9.22934C7.62976 9.26421 7.71921 9.28217 7.80957 9.28217C7.89993 9.28217 7.98939 9.26421 8.07274 9.22934C8.1561 9.19447 8.23169 9.14337 8.29513 9.07903C8.35857 9.01469 8.40859 8.93838 8.44228 8.85454C8.47598 8.77069 8.49267 8.68099 8.49139 8.59064V4.09091C8.49264 3.99969 8.47557 3.90915 8.4412 3.82464C8.40682 3.74014 8.35584 3.66339 8.29127 3.59894C8.2267 3.5345 8.14985 3.48366 8.06528 3.44945C7.98071 3.41524 7.89015 3.39834 7.79893 3.39977ZM7.80957 10.2273C7.62874 10.2273 7.45532 10.2991 7.32745 10.427C7.19959 10.5548 7.12775 10.7283 7.12775 10.9091C7.12775 11.0899 7.19959 11.2633 7.32745 11.3912C7.45532 11.5191 7.62874 11.5909 7.80957 11.5909C7.9904 11.5909 8.16382 11.5191 8.29169 11.3912C8.41955 11.2633 8.49139 11.0899 8.49139 10.9091C8.49139 10.7283 8.41955 10.5548 8.29169 10.427C8.16382 10.2991 7.9904 10.2273 7.80957 10.2273Z"
+                                            fill="#FF0000" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_8_22180">
+                                            <rect width="15" height="15" fill="white" transform="translate(0.30957)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p>Пустое поле</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__field form__field-iconed">
+                        <label for="">Ф.И.О.<span>*</span></label>
+                        <input pattern="[A-Za-zА-Яа-яЁё\s]+" required type="text" placeholder="Введите имя"
+                            id="call_form-name">
+                        <div class="field-icon">
+                            <svg width="13" height="16" viewBox="0 0 13 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.40466 8.52272C8.77233 8.52261 9.62415 6.15191 9.8473 4.20464C10.122 1.8056 8.98768 0 6.40466 0C3.82202 0 2.68717 1.8054 2.96203 4.20464C3.18536 6.15199 4.03705 8.52301 6.40466 8.52272Z"
+                                    fill="#A9A9A9" />
+                                <path
+                                    d="M12.8106 14.168C12.7847 13.4123 12.6962 12.6532 12.5643 11.9093C12.4046 11.0082 12.2012 9.68698 11.4144 9.09969C10.9594 8.76017 10.3702 8.64868 9.84932 8.44399C9.59574 8.34443 9.36874 8.24544 9.15556 8.13281C8.43612 8.92177 7.49805 9.33452 6.40551 9.33452C5.31341 9.33452 4.37534 8.9218 3.65604 8.13281C3.44287 8.24543 3.21575 8.34442 2.96228 8.44399C2.44142 8.64879 1.85221 8.76017 1.3972 9.09969C0.610357 9.68698 0.407011 11.0081 0.247294 11.9093C0.115372 12.6532 0.0268674 13.4124 0.00097264 14.168C-0.0190054 14.7532 0.269951 14.8353 0.759586 15.012C1.37277 15.2331 2.00581 15.3972 2.64299 15.5318C3.87381 15.7918 5.14246 15.9915 6.40563 16.0005C7.66882 15.9915 8.93758 15.7918 10.1683 15.5318C10.8056 15.3973 11.4386 15.2332 12.0517 15.012C12.5417 14.8354 12.8307 14.7534 12.8106 14.168H12.8106Z"
+                                    fill="#A9A9A9" />
+                            </svg>
+                        </div>
+                        <div class="field-invalid">
+                            <div class="invalid-wrap">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_8_22180)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.80957 0C3.67551 0 0.30957 3.36594 0.30957 7.5C0.30957 11.6341 3.67551 15 7.80957 15C11.9436 15 15.3096 11.6341 15.3096 7.5C15.3096 3.36594 11.9436 0 7.80957 0ZM7.80957 1.36364C11.2067 1.36364 13.9459 4.1029 13.9459 7.5C13.9459 10.8971 11.2067 13.6364 7.80957 13.6364C4.41247 13.6364 1.67321 10.8971 1.67321 7.5C1.67321 4.1029 4.41247 1.36364 7.80957 1.36364ZM7.79893 3.39977C7.61833 3.40259 7.44623 3.47694 7.3204 3.60652C7.19456 3.7361 7.12528 3.9103 7.12775 4.09091V8.59064C7.12647 8.68099 7.14317 8.77069 7.17686 8.85454C7.21055 8.93838 7.26057 9.01469 7.32401 9.07903C7.38745 9.14337 7.46304 9.19447 7.5464 9.22934C7.62976 9.26421 7.71921 9.28217 7.80957 9.28217C7.89993 9.28217 7.98939 9.26421 8.07274 9.22934C8.1561 9.19447 8.23169 9.14337 8.29513 9.07903C8.35857 9.01469 8.40859 8.93838 8.44228 8.85454C8.47598 8.77069 8.49267 8.68099 8.49139 8.59064V4.09091C8.49264 3.99969 8.47557 3.90915 8.4412 3.82464C8.40682 3.74014 8.35584 3.66339 8.29127 3.59894C8.2267 3.5345 8.14985 3.48366 8.06528 3.44945C7.98071 3.41524 7.89015 3.39834 7.79893 3.39977ZM7.80957 10.2273C7.62874 10.2273 7.45532 10.2991 7.32745 10.427C7.19959 10.5548 7.12775 10.7283 7.12775 10.9091C7.12775 11.0899 7.19959 11.2633 7.32745 11.3912C7.45532 11.5191 7.62874 11.5909 7.80957 11.5909C7.9904 11.5909 8.16382 11.5191 8.29169 11.3912C8.41955 11.2633 8.49139 11.0899 8.49139 10.9091C8.49139 10.7283 8.41955 10.5548 8.29169 10.427C8.16382 10.2991 7.9904 10.2273 7.80957 10.2273Z"
+                                            fill="#FF0000" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_8_22180">
+                                            <rect width="15" height="15" fill="white" transform="translate(0.30957)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p>Некорректное имя</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__field field-number">
+                        <label for="">Числовое поле<span>*</span></label>
+                        <input min="0" name="" type="number" value="0">
+                        <div class="buttons">
+                            <button onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepUp()">
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.18441 0.0856711L7.91979 4.08934C7.97319 4.14663 8 4.21256 8 4.28698C8 4.36142 7.97319 4.42733 7.91979 4.48459L7.51897 4.91409C7.46554 4.97144 7.40416 5 7.33459 5C7.26501 5 7.20364 4.97144 7.15021 4.91409L3.99992 1.53768L0.849566 4.91409C0.796137 4.97144 0.73465 5 0.665273 5C0.595727 5 0.534239 4.97144 0.48081 4.91409L0.0801306 4.48456C0.0266449 4.4273 -2.79143e-08 4.3614 -3.11685e-08 4.28695C-3.44213e-08 4.21253 0.026701 4.14663 0.0801305 4.08934L3.81554 0.0858819C3.86894 0.0286476 3.93045 1.77885e-07 3.99992 1.74849e-07C4.06938 1.71813e-07 4.13086 0.0284368 4.18441 0.0856711Z"
+                                        fill="#A9A9A9" />
+                                </svg>
+                            </button>
+                            <button onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepDown()"
+                                class="plus">
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.18441 4.91433L7.91979 0.910664C7.97319 0.853369 8 0.787439 8 0.713022C8 0.638575 7.97319 0.572674 7.91979 0.51541L7.51897 0.0859117C7.46554 0.0285569 7.40416 -2.6045e-08 7.33459 -2.90861e-08C7.26501 -3.21273e-08 7.20364 0.0285569 7.15021 0.0859116L3.99992 3.46232L0.849566 0.0859114C0.796137 0.0285567 0.73465 -3.17579e-07 0.665273 -3.20611e-07C0.595727 -3.23651e-07 0.534239 0.0285566 0.48081 0.0859113L0.0801306 0.51544C0.0266449 0.572704 -2.79143e-08 0.638605 -3.11685e-08 0.713052C-3.44213e-08 0.787468 0.026701 0.853369 0.0801305 0.910664L3.81554 4.91412C3.86894 4.97135 3.93045 5 3.99992 5C4.06938 5 4.13086 4.97156 4.18441 4.91433Z"
+                                        fill="#A9A9A9" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form__field field-number">
+                        <label for="">Числовое поле 2<span>*</span></label>
+                        <input min="0" name="" type="number" value="0">
+                        <div class="buttons">
+                            <button onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepUp()">
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.18441 0.0856711L7.91979 4.08934C7.97319 4.14663 8 4.21256 8 4.28698C8 4.36142 7.97319 4.42733 7.91979 4.48459L7.51897 4.91409C7.46554 4.97144 7.40416 5 7.33459 5C7.26501 5 7.20364 4.97144 7.15021 4.91409L3.99992 1.53768L0.849566 4.91409C0.796137 4.97144 0.73465 5 0.665273 5C0.595727 5 0.534239 4.97144 0.48081 4.91409L0.0801306 4.48456C0.0266449 4.4273 -2.79143e-08 4.3614 -3.11685e-08 4.28695C-3.44213e-08 4.21253 0.026701 4.14663 0.0801305 4.08934L3.81554 0.0858819C3.86894 0.0286476 3.93045 1.77885e-07 3.99992 1.74849e-07C4.06938 1.71813e-07 4.13086 0.0284368 4.18441 0.0856711Z"
+                                        fill="#A9A9A9" />
+                                </svg>
+                            </button>
+                            <button onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepDown()"
+                                class="plus">
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.18441 4.91433L7.91979 0.910664C7.97319 0.853369 8 0.787439 8 0.713022C8 0.638575 7.97319 0.572674 7.91979 0.51541L7.51897 0.0859117C7.46554 0.0285569 7.40416 -2.6045e-08 7.33459 -2.90861e-08C7.26501 -3.21273e-08 7.20364 0.0285569 7.15021 0.0859116L3.99992 3.46232L0.849566 0.0859114C0.796137 0.0285567 0.73465 -3.17579e-07 0.665273 -3.20611e-07C0.595727 -3.23651e-07 0.534239 0.0285566 0.48081 0.0859113L0.0801306 0.51544C0.0266449 0.572704 -2.79143e-08 0.638605 -3.11685e-08 0.713052C-3.44213e-08 0.787468 0.026701 0.853369 0.0801305 0.910664L3.81554 4.91412C3.86894 4.97135 3.93045 5 3.99992 5C4.06938 5 4.13086 4.97156 4.18441 4.91433Z"
+                                        fill="#A9A9A9" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form__field form__field-iconed">
+                        <label for="">E-mail<span>*</span></label>
+                        <input required type="email" placeholder="test@webcompany.by" id="call_form-name">
+                        <div class="field-icon">
+                            <svg width="17" height="12" viewBox="0 0 17 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.39982 8.40166L6.35971 6.60156L0.359375 11.6418C0.599389 11.8819 0.839402 12.0019 1.19942 12.0019H15.6002C15.9602 12.0019 16.2003 11.8819 16.4403 11.6418L10.5599 6.60156L8.39982 8.40166Z"
+                                    fill="#A9A9A9" />
+                                <path
+                                    d="M16.4403 0.36002C16.2003 0.120007 15.9603 0 15.6003 0H1.19947C0.839448 0 0.599434 0.120007 0.359421 0.36002L8.39987 7.2004L16.4403 0.36002Z"
+                                    fill="#A9A9A9" />
+                                <path d="M0 1.08203V11.0426L5.76032 6.12231L0 1.08203Z" fill="#A9A9A9" />
+                                <path d="M11.0391 6.11841L16.7994 11.0387V1.07812L11.0391 6.11841Z" fill="#A9A9A9" />
+                            </svg>
+                        </div>
+                        <div class="field-invalid">
+                            <div class="invalid-wrap">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_8_22180)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.80957 0C3.67551 0 0.30957 3.36594 0.30957 7.5C0.30957 11.6341 3.67551 15 7.80957 15C11.9436 15 15.3096 11.6341 15.3096 7.5C15.3096 3.36594 11.9436 0 7.80957 0ZM7.80957 1.36364C11.2067 1.36364 13.9459 4.1029 13.9459 7.5C13.9459 10.8971 11.2067 13.6364 7.80957 13.6364C4.41247 13.6364 1.67321 10.8971 1.67321 7.5C1.67321 4.1029 4.41247 1.36364 7.80957 1.36364ZM7.79893 3.39977C7.61833 3.40259 7.44623 3.47694 7.3204 3.60652C7.19456 3.7361 7.12528 3.9103 7.12775 4.09091V8.59064C7.12647 8.68099 7.14317 8.77069 7.17686 8.85454C7.21055 8.93838 7.26057 9.01469 7.32401 9.07903C7.38745 9.14337 7.46304 9.19447 7.5464 9.22934C7.62976 9.26421 7.71921 9.28217 7.80957 9.28217C7.89993 9.28217 7.98939 9.26421 8.07274 9.22934C8.1561 9.19447 8.23169 9.14337 8.29513 9.07903C8.35857 9.01469 8.40859 8.93838 8.44228 8.85454C8.47598 8.77069 8.49267 8.68099 8.49139 8.59064V4.09091C8.49264 3.99969 8.47557 3.90915 8.4412 3.82464C8.40682 3.74014 8.35584 3.66339 8.29127 3.59894C8.2267 3.5345 8.14985 3.48366 8.06528 3.44945C7.98071 3.41524 7.89015 3.39834 7.79893 3.39977ZM7.80957 10.2273C7.62874 10.2273 7.45532 10.2991 7.32745 10.427C7.19959 10.5548 7.12775 10.7283 7.12775 10.9091C7.12775 11.0899 7.19959 11.2633 7.32745 11.3912C7.45532 11.5191 7.62874 11.5909 7.80957 11.5909C7.9904 11.5909 8.16382 11.5191 8.29169 11.3912C8.41955 11.2633 8.49139 11.0899 8.49139 10.9091C8.49139 10.7283 8.41955 10.5548 8.29169 10.427C8.16382 10.2991 7.9904 10.2273 7.80957 10.2273Z"
+                                            fill="#FF0000" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_8_22180">
+                                            <rect width="15" height="15" fill="white" transform="translate(0.30957)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p>Некорректное имя</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__field form__field-iconed form-phone">
+                        <label for="">Телефон<span>*</span></label>
+                        <input pattern="\+?[0-9\s\-\(\)]+" required type="text" placeholder="+375 (__) ___-__-__">
+                        <div class="field-icon">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.6933 11.5033C14.6933 11.6967 14.6933 11.9867 14.5 12.0833L12.47 14.1133C12.3733 14.21 12.2767 14.3067 12.0833 14.4033C11.89 14.5 11.7933 14.5 11.6 14.5C11.6 14.5 11.6 14.5 11.5033 14.5C11.4067 14.5 11.4067 14.5 11.31 14.5C11.1167 14.5 10.8267 14.5 10.3433 14.4033C9.86 14.3067 9.37667 14.21 8.7 13.92C8.02333 13.63 7.34667 13.2433 6.57333 12.76C5.8 12.2767 4.93 11.5033 3.96333 10.6333C3.28667 9.95667 2.61 9.28 2.12667 8.60333C1.64333 7.92667 1.25667 7.34667 0.966667 6.76667C0.676667 6.18667 0.483333 5.70333 0.29 5.22C0.193333 4.73667 0 4.35 0 4.06C0.0966667 3.77 0.0966666 3.48 0.0966666 3.28667C0.0966666 3.09333 0.0966666 2.99667 0.0966666 2.99667C0.0966666 2.9 0.193333 2.70667 0.193333 2.51333C0.29 2.41667 0.386667 2.32 0.483333 2.22333L2.51333 0.193333C2.61 0.0966665 2.80333 0 2.99667 0C3.09333 0 3.28667 -8.9407e-08 3.38333 0.0966666C3.48 0.193333 3.57667 0.29 3.67333 0.386667L5.31667 3.48C5.41333 3.67333 5.41333 3.86667 5.41333 4.06C5.41333 4.25333 5.31667 4.44667 5.12333 4.54333L4.35 5.31667C4.35 5.31667 4.35 5.41333 4.25333 5.41333C4.15667 5.41333 4.25333 5.51 4.25333 5.51C4.25333 5.70333 4.35 5.99333 4.54333 6.28333C4.64 6.57333 4.83333 6.86333 5.12333 7.15333C5.41333 7.54 5.70333 7.92667 6.18667 8.41C6.67 8.89333 7.05667 9.28 7.44333 9.47333C7.83 9.76333 8.12 9.95667 8.31333 10.0533C8.60333 10.15 8.7 10.2467 8.89333 10.2467H9.08667H9.18333C9.18333 10.2467 9.28 10.2467 9.28 10.15L10.15 9.28C10.3433 9.08667 10.5367 8.99 10.8267 8.99C11.02 8.99 11.1167 8.99 11.2133 9.08667L14.21 10.8267C14.5 11.1167 14.6933 11.2133 14.6933 11.5033Z"
+                                    fill="#A9A9A9" />
+                            </svg>
+                        </div>
+                        <div class="field-invalid">
+                            <div class="invalid-wrap">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_8_22180)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.80957 0C3.67551 0 0.30957 3.36594 0.30957 7.5C0.30957 11.6341 3.67551 15 7.80957 15C11.9436 15 15.3096 11.6341 15.3096 7.5C15.3096 3.36594 11.9436 0 7.80957 0ZM7.80957 1.36364C11.2067 1.36364 13.9459 4.1029 13.9459 7.5C13.9459 10.8971 11.2067 13.6364 7.80957 13.6364C4.41247 13.6364 1.67321 10.8971 1.67321 7.5C1.67321 4.1029 4.41247 1.36364 7.80957 1.36364ZM7.79893 3.39977C7.61833 3.40259 7.44623 3.47694 7.3204 3.60652C7.19456 3.7361 7.12528 3.9103 7.12775 4.09091V8.59064C7.12647 8.68099 7.14317 8.77069 7.17686 8.85454C7.21055 8.93838 7.26057 9.01469 7.32401 9.07903C7.38745 9.14337 7.46304 9.19447 7.5464 9.22934C7.62976 9.26421 7.71921 9.28217 7.80957 9.28217C7.89993 9.28217 7.98939 9.26421 8.07274 9.22934C8.1561 9.19447 8.23169 9.14337 8.29513 9.07903C8.35857 9.01469 8.40859 8.93838 8.44228 8.85454C8.47598 8.77069 8.49267 8.68099 8.49139 8.59064V4.09091C8.49264 3.99969 8.47557 3.90915 8.4412 3.82464C8.40682 3.74014 8.35584 3.66339 8.29127 3.59894C8.2267 3.5345 8.14985 3.48366 8.06528 3.44945C7.98071 3.41524 7.89015 3.39834 7.79893 3.39977ZM7.80957 10.2273C7.62874 10.2273 7.45532 10.2991 7.32745 10.427C7.19959 10.5548 7.12775 10.7283 7.12775 10.9091C7.12775 11.0899 7.19959 11.2633 7.32745 11.3912C7.45532 11.5191 7.62874 11.5909 7.80957 11.5909C7.9904 11.5909 8.16382 11.5191 8.29169 11.3912C8.41955 11.2633 8.49139 11.0899 8.49139 10.9091C8.49139 10.7283 8.41955 10.5548 8.29169 10.427C8.16382 10.2991 7.9904 10.2273 7.80957 10.2273Z"
+                                            fill="#FF0000" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_8_22180">
+                                            <rect width="15" height="15" fill="white" transform="translate(0.30957)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p>Некорректное поле</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <label for="">Список<span>*</span></label>
+                        <div class="select">
+                            <div class="select__item">
+                                <div class="item">
+                                    <div class="item__head"><span>Выберите значение</span><svg width="8" height="5"
+                                            viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.18441 0.0856711L7.91979 4.08934C7.97319 4.14663 8 4.21256 8 4.28698C8 4.36142 7.97319 4.42733 7.91979 4.48459L7.51897 4.91409C7.46554 4.97144 7.40416 5 7.33459 5C7.26501 5 7.20364 4.97144 7.15021 4.91409L3.99992 1.53768L0.849566 4.91409C0.796137 4.97144 0.73465 5 0.665273 5C0.595727 5 0.534239 4.97144 0.48081 4.91409L0.0801305 4.48456C0.0266449 4.4273 1.61254e-07 4.3614 1.58e-07 4.28695C1.54747e-07 4.21253 0.026701 4.14663 0.0801305 4.08934L3.81554 0.0858819C3.86894 0.0286475 3.93045 1.3064e-07 3.99992 1.27604e-07C4.06938 1.24568e-07 4.13086 0.0284367 4.18441 0.0856711Z"
+                                                fill="#A9A9A9" />
+                                        </svg>
+                                    </div>
+                                    <div class="item__options">
+                                        <input type="hidden" name="" id="" value="1">
+                                        <div class="option-wrap">
+                                            <input type="radio" class="item__option" data-text="Пункт списка 1"
+                                                data-selected-value="1" data-label-name="" data-value="">
+                                            <label>Пункт списка 1</label>
+                                        </div>
+                                        <div class="option-wrap">
+                                            <input type="radio" class="item__option" data-text="Пункт списка 2"
+                                                data-selected-value="2" data-label-name="" data-value="">
+                                            <label>Пункт списка 2</label>
+                                        </div>
+                                        <div class="option-wrap">
+                                            <input type="radio" class="item__option" data-text="Пункт списка 3"
+                                                data-selected-value="3" data-label-name="" data-value="">
+                                            <label>Пункт списка 3</label>
+                                        </div>
+                                        <div class="option-wrap">
+                                            <input type="radio" class="item__option" data-text="Пункт списка 4"
+                                                data-selected-value="4" data-label-name="" data-value="">
+                                            <label>Пункт списка 4</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <label for="">Список с мультиселектом<span>*</span></label>
+                        <div class="select select-multi">
+                            <div class="select__item">
+                                <input type="hidden" name="" id="" value="">
+                                <div class="multi"></div>
+                                <div class="item">
+                                    <div class="item__head"><span>Выберите значение</span><svg width="8" height="5"
+                                            viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.18441 0.0856711L7.91979 4.08934C7.97319 4.14663 8 4.21256 8 4.28698C8 4.36142 7.97319 4.42733 7.91979 4.48459L7.51897 4.91409C7.46554 4.97144 7.40416 5 7.33459 5C7.26501 5 7.20364 4.97144 7.15021 4.91409L3.99992 1.53768L0.849566 4.91409C0.796137 4.97144 0.73465 5 0.665273 5C0.595727 5 0.534239 4.97144 0.48081 4.91409L0.0801305 4.48456C0.0266449 4.4273 1.61254e-07 4.3614 1.58e-07 4.28695C1.54747e-07 4.21253 0.026701 4.14663 0.0801305 4.08934L3.81554 0.0858819C3.86894 0.0286475 3.93045 1.3064e-07 3.99992 1.27604e-07C4.06938 1.24568e-07 4.13086 0.0284367 4.18441 0.0856711Z"
+                                                fill="#A9A9A9" />
+                                        </svg>
+                                    </div>
+                                    <div class="item__options">
+                                        <div class="option-wrap">
+                                            <input type="radio" class="item__option" data-text="Пункт списка 1"
+                                                data-selected-value="1" data-label-name="" data-value="">
+                                            <label>Пункт списка 1</label>
+                                        </div>
+                                        <div class="option-wrap">
+                                            <input type="radio" class="item__option"
+                                                data-text="Пункт списка 2, длинное наименование пункта списка в две или три строки"
+                                                data-selected-value="2" data-label-name="" data-value="">
+                                            <label>Пункт списка 2, длинное наименование пункта списка в две или три
+                                                строки</label>
+                                        </div>
+                                        <div class="option-wrap">
+                                            <input type="radio" class="item__option" data-text="Пункт списка 3"
+                                                data-selected-value="3" data-label-name="" data-value="">
+                                            <label>Пункт списка 3</label>
+                                        </div>
+                                        <div class="option-wrap">
+                                            <input type="radio" class="item__option" data-text="Пункт списка 4"
+                                                data-selected-value="4" data-label-name="" data-value="">
+                                            <label>Пункт списка 4</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <label for="">Дата<span>*</span></label>
+                        <input required type="date" placeholder="Выберите дату">
+                        <div class="field-invalid">
+                            <div class="invalid-wrap">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_8_22180)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.80957 0C3.67551 0 0.30957 3.36594 0.30957 7.5C0.30957 11.6341 3.67551 15 7.80957 15C11.9436 15 15.3096 11.6341 15.3096 7.5C15.3096 3.36594 11.9436 0 7.80957 0ZM7.80957 1.36364C11.2067 1.36364 13.9459 4.1029 13.9459 7.5C13.9459 10.8971 11.2067 13.6364 7.80957 13.6364C4.41247 13.6364 1.67321 10.8971 1.67321 7.5C1.67321 4.1029 4.41247 1.36364 7.80957 1.36364ZM7.79893 3.39977C7.61833 3.40259 7.44623 3.47694 7.3204 3.60652C7.19456 3.7361 7.12528 3.9103 7.12775 4.09091V8.59064C7.12647 8.68099 7.14317 8.77069 7.17686 8.85454C7.21055 8.93838 7.26057 9.01469 7.32401 9.07903C7.38745 9.14337 7.46304 9.19447 7.5464 9.22934C7.62976 9.26421 7.71921 9.28217 7.80957 9.28217C7.89993 9.28217 7.98939 9.26421 8.07274 9.22934C8.1561 9.19447 8.23169 9.14337 8.29513 9.07903C8.35857 9.01469 8.40859 8.93838 8.44228 8.85454C8.47598 8.77069 8.49267 8.68099 8.49139 8.59064V4.09091C8.49264 3.99969 8.47557 3.90915 8.4412 3.82464C8.40682 3.74014 8.35584 3.66339 8.29127 3.59894C8.2267 3.5345 8.14985 3.48366 8.06528 3.44945C7.98071 3.41524 7.89015 3.39834 7.79893 3.39977ZM7.80957 10.2273C7.62874 10.2273 7.45532 10.2991 7.32745 10.427C7.19959 10.5548 7.12775 10.7283 7.12775 10.9091C7.12775 11.0899 7.19959 11.2633 7.32745 11.3912C7.45532 11.5191 7.62874 11.5909 7.80957 11.5909C7.9904 11.5909 8.16382 11.5191 8.29169 11.3912C8.41955 11.2633 8.49139 11.0899 8.49139 10.9091C8.49139 10.7283 8.41955 10.5548 8.29169 10.427C8.16382 10.2991 7.9904 10.2273 7.80957 10.2273Z"
+                                            fill="#FF0000" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_8_22180">
+                                            <rect width="15" height="15" fill="white" transform="translate(0.30957)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p>Некорректное поле</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <label for="">Дата 2<span>*</span></label>
+                        <input type="date" placeholder="Выберите дату">
+                        <div class="field-invalid">
+                            <div class="invalid-wrap">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_8_22180)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.80957 0C3.67551 0 0.30957 3.36594 0.30957 7.5C0.30957 11.6341 3.67551 15 7.80957 15C11.9436 15 15.3096 11.6341 15.3096 7.5C15.3096 3.36594 11.9436 0 7.80957 0ZM7.80957 1.36364C11.2067 1.36364 13.9459 4.1029 13.9459 7.5C13.9459 10.8971 11.2067 13.6364 7.80957 13.6364C4.41247 13.6364 1.67321 10.8971 1.67321 7.5C1.67321 4.1029 4.41247 1.36364 7.80957 1.36364ZM7.79893 3.39977C7.61833 3.40259 7.44623 3.47694 7.3204 3.60652C7.19456 3.7361 7.12528 3.9103 7.12775 4.09091V8.59064C7.12647 8.68099 7.14317 8.77069 7.17686 8.85454C7.21055 8.93838 7.26057 9.01469 7.32401 9.07903C7.38745 9.14337 7.46304 9.19447 7.5464 9.22934C7.62976 9.26421 7.71921 9.28217 7.80957 9.28217C7.89993 9.28217 7.98939 9.26421 8.07274 9.22934C8.1561 9.19447 8.23169 9.14337 8.29513 9.07903C8.35857 9.01469 8.40859 8.93838 8.44228 8.85454C8.47598 8.77069 8.49267 8.68099 8.49139 8.59064V4.09091C8.49264 3.99969 8.47557 3.90915 8.4412 3.82464C8.40682 3.74014 8.35584 3.66339 8.29127 3.59894C8.2267 3.5345 8.14985 3.48366 8.06528 3.44945C7.98071 3.41524 7.89015 3.39834 7.79893 3.39977ZM7.80957 10.2273C7.62874 10.2273 7.45532 10.2991 7.32745 10.427C7.19959 10.5548 7.12775 10.7283 7.12775 10.9091C7.12775 11.0899 7.19959 11.2633 7.32745 11.3912C7.45532 11.5191 7.62874 11.5909 7.80957 11.5909C7.9904 11.5909 8.16382 11.5191 8.29169 11.3912C8.41955 11.2633 8.49139 11.0899 8.49139 10.9091C8.49139 10.7283 8.41955 10.5548 8.29169 10.427C8.16382 10.2991 7.9904 10.2273 7.80957 10.2273Z"
+                                            fill="#FF0000" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_8_22180">
+                                            <rect width="15" height="15" fill="white" transform="translate(0.30957)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p>Некорректное поле</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__field field-file">
+                        <label for="">Файл</label>
+                        <button type="button"
+                            onclick="$(this).closest('.form__field').find('input[type=file]').trigger('click')">Добавить
+                            файл</button>
+                        <div class="file-upload-wrap">
+                            <input type="file" onchange="readURL(this);" />
+                            <p class="file-name">Выберите файл</p>
+                        </div>
+                    </div>
+                    <div class="form__field field-file">
+                        <label for="">Несколько файлов</label>
+                        <div class="file-upload-wrap file-multiple">
+                            <button type="button"
+                                onclick="$(this).closest('.form__field').find('input[type=file]').trigger('click')">Добавить
+                                файл</button>
+                            <input type="file" onchange="readURL(this);" />
+                            <p class="file-name">Выберите файл</p>
+                        </div>
+                        <div class="file-list">
+                        </div>
+                        <div class="file-add-more"
+                            onclick="$(this).closest('.form__field').find('input[type=file]').trigger('click')">+ Еще
+                            один файл</div>
+                    </div>
+                    <div class="form__field form__field-iconed">
+                        <label for="">Комментарий<span>*</span></label>
+                        <textarea name="" id="" rows="8" placeholder="Введите текст" required></textarea>
+                        <div class="field-icon">
+                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.89651 11.2344L4.3019 13.6397L0.507812 15.0015L1.89651 11.2344Z"
+                                    fill="#A9A9A9" />
+                                <path
+                                    d="M2.29688 10.5795L10.7905 2.08594L13.445 4.74049L4.95142 13.2341L2.29688 10.5795Z"
+                                    fill="#A9A9A9" />
+                                <path
+                                    d="M15.3097 2.87417L13.9749 4.20898L11.3203 1.55443L12.6551 0.219623C12.796 0.0790724 12.9868 0 13.1859 0C13.3849 0 13.5758 0.0790724 13.7166 0.219623L15.3097 1.81271C15.4503 1.95347 15.5293 2.14439 15.5293 2.34339C15.5293 2.54248 15.4503 2.73331 15.3097 2.87417Z"
+                                    fill="#A9A9A9" />
+                            </svg>
+                        </div>
+                        <div class="field-invalid">
+                            <div class="invalid-wrap">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_8_22180)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.80957 0C3.67551 0 0.30957 3.36594 0.30957 7.5C0.30957 11.6341 3.67551 15 7.80957 15C11.9436 15 15.3096 11.6341 15.3096 7.5C15.3096 3.36594 11.9436 0 7.80957 0ZM7.80957 1.36364C11.2067 1.36364 13.9459 4.1029 13.9459 7.5C13.9459 10.8971 11.2067 13.6364 7.80957 13.6364C4.41247 13.6364 1.67321 10.8971 1.67321 7.5C1.67321 4.1029 4.41247 1.36364 7.80957 1.36364ZM7.79893 3.39977C7.61833 3.40259 7.44623 3.47694 7.3204 3.60652C7.19456 3.7361 7.12528 3.9103 7.12775 4.09091V8.59064C7.12647 8.68099 7.14317 8.77069 7.17686 8.85454C7.21055 8.93838 7.26057 9.01469 7.32401 9.07903C7.38745 9.14337 7.46304 9.19447 7.5464 9.22934C7.62976 9.26421 7.71921 9.28217 7.80957 9.28217C7.89993 9.28217 7.98939 9.26421 8.07274 9.22934C8.1561 9.19447 8.23169 9.14337 8.29513 9.07903C8.35857 9.01469 8.40859 8.93838 8.44228 8.85454C8.47598 8.77069 8.49267 8.68099 8.49139 8.59064V4.09091C8.49264 3.99969 8.47557 3.90915 8.4412 3.82464C8.40682 3.74014 8.35584 3.66339 8.29127 3.59894C8.2267 3.5345 8.14985 3.48366 8.06528 3.44945C7.98071 3.41524 7.89015 3.39834 7.79893 3.39977ZM7.80957 10.2273C7.62874 10.2273 7.45532 10.2991 7.32745 10.427C7.19959 10.5548 7.12775 10.7283 7.12775 10.9091C7.12775 11.0899 7.19959 11.2633 7.32745 11.3912C7.45532 11.5191 7.62874 11.5909 7.80957 11.5909C7.9904 11.5909 8.16382 11.5191 8.29169 11.3912C8.41955 11.2633 8.49139 11.0899 8.49139 10.9091C8.49139 10.7283 8.41955 10.5548 8.29169 10.427C8.16382 10.2991 7.9904 10.2273 7.80957 10.2273Z"
+                                            fill="#FF0000" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_8_22180">
+                                            <rect width="15" height="15" fill="white" transform="translate(0.30957)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p>Некорректное поле</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__privacy">
+                        <input type="checkbox" name="" id="call_form-privacy">
+                        <label for="call_form-privacy">Я согласен(на) на <a>обработку персональных данных</a></label>
+                    </div>
+                    <div class="form__submit">
+                        <input type="submit" value="Отправить" class="main-cta">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="gallery__popup popup">
+        <div class="popup-wrap"></div>
+        <div class="popup__wrap wrap container">
+            <div class="wrap">
+                <div class="popup__btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.7691 10.0001L19.6341 2.1351C20.1227 1.64687 20.1227 0.854706 19.6341 0.366481C19.1454 -0.12216 18.3541 -0.12216 17.8654 0.366481L10.0005 8.23145L2.1351 0.366481C1.64646 -0.12216 0.855123 -0.12216 0.366481 0.366481C-0.12216 0.854706 -0.12216 1.64687 0.366481 2.1351L8.23186 10.0001L0.366481 17.865C-0.12216 18.3533 -0.12216 19.1454 0.366481 19.6336C0.610802 19.8775 0.931004 19.9997 1.25079 19.9997C1.57057 19.9997 1.89078 19.8775 2.1351 19.6332L10.0005 11.7683L17.8654 19.6332C18.1098 19.8775 18.43 19.9997 18.7498 19.9997C19.0695 19.9997 19.3897 19.8775 19.6341 19.6332C20.1227 19.145 20.1227 18.3528 19.6341 17.8646L11.7691 10.0001Z"
+                            fill="white" />
+                    </svg>
+                </div>
+                <div class="inner">
+                    <div class="inner__arrow inner__arrow-gallery inner__arrow-left">
+                        <div class="inner__arrow-wrap">
+                            <svg width="8" height="10" viewBox="0 0 8 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.07812 8.75L3.24479 5L7.07812 1.16667L5.91146 0L0.911459 5L5.91146 10L7.07812 8.75Z"
+                                    fill="var(--color-accent)" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="inner__image">
+                        <div class="image-cage">
+                            <img src="./images/certificates/1.png" alt="Certificate card">
+                        </div>
+                    </div>
+                    <div class="inner__arrow inner__arrow-gallery">
+                        <div class="inner__arrow-wrap">
+                            <svg width="8" height="10" viewBox="0 0 8 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.921875 8.75L4.75521 5L0.921875 1.16667L2.08854 0L7.08854 5L2.08854 10L0.921875 8.75Z"
+                                    fill="var(--color-accent)" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__text">В нашем катологе представлены последние линейки спецтехники, систем Закажите
+                    констультацию по любому товару у наших специалистов или соберите свой заказ прямо на сайте. мы
+                    подготовим для вас индивидуальное коммерческое предложение и вышлем персональный блок бонусов и
+                    скидок. </div>
+            </div>
+        </div>
+    </div>
+    <div class="make-review__popup popup">
+        <div class="popup-wrap"></div>
+        <div class="popup__wrap wrap container">
+            <div class="wrap">
+                <div class="popup__btn">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.5923 9.00019L17.6709 1.92162C18.1107 1.48221 18.1107 0.769247 17.6709 0.329838C17.2311 -0.109946 16.5189 -0.109946 16.0791 0.329838L9.00056 7.40841L1.92162 0.329838C1.48183 -0.109946 0.769622 -0.109946 0.329838 0.329838C-0.109946 0.769247 -0.109946 1.48221 0.329838 1.92162L7.40878 9.00019L0.329838 16.0788C-0.109946 16.5182 -0.109946 17.2311 0.329838 17.6705C0.54973 17.8901 0.837916 18 1.12573 18C1.41354 18 1.70172 17.8901 1.92162 17.6702L9.00056 10.5916L16.0791 17.6702C16.299 17.8901 16.5872 18 16.875 18C17.1628 18 17.451 17.8901 17.6709 17.6702C18.1107 17.2308 18.1107 16.5178 17.6709 16.0784L10.5923 9.00019Z"
+                            fill="#B0B0B0" />
+                    </svg>
+                </div>
+                <div class="popup__title">Оставить отзыв</div>
+                <form action="" class="popup__form d_form">
+                    <div class="form__field">
+                        <label for="">Ваше имя<span>*</span></label>
+                        <input pattern="[A-Za-zА-Яа-яЁё\s]+" required type="text" placeholder="Иван Иванов" value=""
+                            id="call_form-name">
+                        <div class="field-invalid">
+                            <div class="invalid-wrap">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_8_22180)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.80957 0C3.67551 0 0.30957 3.36594 0.30957 7.5C0.30957 11.6341 3.67551 15 7.80957 15C11.9436 15 15.3096 11.6341 15.3096 7.5C15.3096 3.36594 11.9436 0 7.80957 0ZM7.80957 1.36364C11.2067 1.36364 13.9459 4.1029 13.9459 7.5C13.9459 10.8971 11.2067 13.6364 7.80957 13.6364C4.41247 13.6364 1.67321 10.8971 1.67321 7.5C1.67321 4.1029 4.41247 1.36364 7.80957 1.36364ZM7.79893 3.39977C7.61833 3.40259 7.44623 3.47694 7.3204 3.60652C7.19456 3.7361 7.12528 3.9103 7.12775 4.09091V8.59064C7.12647 8.68099 7.14317 8.77069 7.17686 8.85454C7.21055 8.93838 7.26057 9.01469 7.32401 9.07903C7.38745 9.14337 7.46304 9.19447 7.5464 9.22934C7.62976 9.26421 7.71921 9.28217 7.80957 9.28217C7.89993 9.28217 7.98939 9.26421 8.07274 9.22934C8.1561 9.19447 8.23169 9.14337 8.29513 9.07903C8.35857 9.01469 8.40859 8.93838 8.44228 8.85454C8.47598 8.77069 8.49267 8.68099 8.49139 8.59064V4.09091C8.49264 3.99969 8.47557 3.90915 8.4412 3.82464C8.40682 3.74014 8.35584 3.66339 8.29127 3.59894C8.2267 3.5345 8.14985 3.48366 8.06528 3.44945C7.98071 3.41524 7.89015 3.39834 7.79893 3.39977ZM7.80957 10.2273C7.62874 10.2273 7.45532 10.2991 7.32745 10.427C7.19959 10.5548 7.12775 10.7283 7.12775 10.9091C7.12775 11.0899 7.19959 11.2633 7.32745 11.3912C7.45532 11.5191 7.62874 11.5909 7.80957 11.5909C7.9904 11.5909 8.16382 11.5191 8.29169 11.3912C8.41955 11.2633 8.49139 11.0899 8.49139 10.9091C8.49139 10.7283 8.41955 10.5548 8.29169 10.427C8.16382 10.2991 7.9904 10.2273 7.80957 10.2273Z"
+                                            fill="#FF0000" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_8_22180">
+                                            <rect width="15" height="15" fill="white" transform="translate(0.30957)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p>Пустое поле</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <label for="">E-mail<span>*</span></label>
+                        <input required type="email" placeholder="test@webcompany.by" id="call_form-name">
+                        <div class="field-invalid">
+                            <div class="invalid-wrap">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_8_22180)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.80957 0C3.67551 0 0.30957 3.36594 0.30957 7.5C0.30957 11.6341 3.67551 15 7.80957 15C11.9436 15 15.3096 11.6341 15.3096 7.5C15.3096 3.36594 11.9436 0 7.80957 0ZM7.80957 1.36364C11.2067 1.36364 13.9459 4.1029 13.9459 7.5C13.9459 10.8971 11.2067 13.6364 7.80957 13.6364C4.41247 13.6364 1.67321 10.8971 1.67321 7.5C1.67321 4.1029 4.41247 1.36364 7.80957 1.36364ZM7.79893 3.39977C7.61833 3.40259 7.44623 3.47694 7.3204 3.60652C7.19456 3.7361 7.12528 3.9103 7.12775 4.09091V8.59064C7.12647 8.68099 7.14317 8.77069 7.17686 8.85454C7.21055 8.93838 7.26057 9.01469 7.32401 9.07903C7.38745 9.14337 7.46304 9.19447 7.5464 9.22934C7.62976 9.26421 7.71921 9.28217 7.80957 9.28217C7.89993 9.28217 7.98939 9.26421 8.07274 9.22934C8.1561 9.19447 8.23169 9.14337 8.29513 9.07903C8.35857 9.01469 8.40859 8.93838 8.44228 8.85454C8.47598 8.77069 8.49267 8.68099 8.49139 8.59064V4.09091C8.49264 3.99969 8.47557 3.90915 8.4412 3.82464C8.40682 3.74014 8.35584 3.66339 8.29127 3.59894C8.2267 3.5345 8.14985 3.48366 8.06528 3.44945C7.98071 3.41524 7.89015 3.39834 7.79893 3.39977ZM7.80957 10.2273C7.62874 10.2273 7.45532 10.2991 7.32745 10.427C7.19959 10.5548 7.12775 10.7283 7.12775 10.9091C7.12775 11.0899 7.19959 11.2633 7.32745 11.3912C7.45532 11.5191 7.62874 11.5909 7.80957 11.5909C7.9904 11.5909 8.16382 11.5191 8.29169 11.3912C8.41955 11.2633 8.49139 11.0899 8.49139 10.9091C8.49139 10.7283 8.41955 10.5548 8.29169 10.427C8.16382 10.2991 7.9904 10.2273 7.80957 10.2273Z"
+                                            fill="#FF0000" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_8_22180">
+                                            <rect width="15" height="15" fill="white" transform="translate(0.30957)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p>Некорректное поле</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <label for="">Сообщение<span>*</span></label>
+                        <textarea name="" id="" rows="8" placeholder="Введите текст сообщения" required></textarea>
+                        <div class="field-invalid">
+                            <div class="invalid-wrap">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_8_22180)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.80957 0C3.67551 0 0.30957 3.36594 0.30957 7.5C0.30957 11.6341 3.67551 15 7.80957 15C11.9436 15 15.3096 11.6341 15.3096 7.5C15.3096 3.36594 11.9436 0 7.80957 0ZM7.80957 1.36364C11.2067 1.36364 13.9459 4.1029 13.9459 7.5C13.9459 10.8971 11.2067 13.6364 7.80957 13.6364C4.41247 13.6364 1.67321 10.8971 1.67321 7.5C1.67321 4.1029 4.41247 1.36364 7.80957 1.36364ZM7.79893 3.39977C7.61833 3.40259 7.44623 3.47694 7.3204 3.60652C7.19456 3.7361 7.12528 3.9103 7.12775 4.09091V8.59064C7.12647 8.68099 7.14317 8.77069 7.17686 8.85454C7.21055 8.93838 7.26057 9.01469 7.32401 9.07903C7.38745 9.14337 7.46304 9.19447 7.5464 9.22934C7.62976 9.26421 7.71921 9.28217 7.80957 9.28217C7.89993 9.28217 7.98939 9.26421 8.07274 9.22934C8.1561 9.19447 8.23169 9.14337 8.29513 9.07903C8.35857 9.01469 8.40859 8.93838 8.44228 8.85454C8.47598 8.77069 8.49267 8.68099 8.49139 8.59064V4.09091C8.49264 3.99969 8.47557 3.90915 8.4412 3.82464C8.40682 3.74014 8.35584 3.66339 8.29127 3.59894C8.2267 3.5345 8.14985 3.48366 8.06528 3.44945C7.98071 3.41524 7.89015 3.39834 7.79893 3.39977ZM7.80957 10.2273C7.62874 10.2273 7.45532 10.2991 7.32745 10.427C7.19959 10.5548 7.12775 10.7283 7.12775 10.9091C7.12775 11.0899 7.19959 11.2633 7.32745 11.3912C7.45532 11.5191 7.62874 11.5909 7.80957 11.5909C7.9904 11.5909 8.16382 11.5191 8.29169 11.3912C8.41955 11.2633 8.49139 11.0899 8.49139 10.9091C8.49139 10.7283 8.41955 10.5548 8.29169 10.427C8.16382 10.2991 7.9904 10.2273 7.80957 10.2273Z"
+                                            fill="#FF0000" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_8_22180">
+                                            <rect width="15" height="15" fill="white" transform="translate(0.30957)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p>Некорректное поле</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__field field-file">
+                        <label for="">Ваш отзыв</label>
+                        <button type="button" style="width: 150px;"
+                            onclick="$(this).closest('.form__field').find('input[type=file]').trigger('click')">Прикрепить
+                            файл</button>
+                        <div class="file-upload-wrap" style="padding-left: 171px;">
+                            <input type="file" onchange="readURL(this);" />
+                            <p class="file-name">Выберите файл</p>
+                        </div>
+                    </div>
+                    <div class="form__privacy">
+                        <input type="checkbox" name="" id="call_form-privacy">
+                        <label for="call_form-privacy">Я согласен(на) на <a>обработку персональных данных</a></label>
+                    </div>
+                    <div class="form__submit">
+                        <input type="submit" value="Отправить" class="main-cta">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="quick-look__popup popup">
+        <div class="popup-wrap "></div>
+        <div class="popup__wrap wrap container ">
+            <div class="wrap">
+                <div class="popup__btn">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.5923 9.00019L17.6709 1.92162C18.1107 1.48221 18.1107 0.769247 17.6709 0.329838C17.2311 -0.109946 16.5189 -0.109946 16.0791 0.329838L9.00056 7.40841L1.92162 0.329838C1.48183 -0.109946 0.769622 -0.109946 0.329838 0.329838C-0.109946 0.769247 -0.109946 1.48221 0.329838 1.92162L7.40878 9.00019L0.329838 16.0788C-0.109946 16.5182 -0.109946 17.2311 0.329838 17.6705C0.54973 17.8901 0.837916 18 1.12573 18C1.41354 18 1.70172 17.8901 1.92162 17.6702L9.00056 10.5916L16.0791 17.6702C16.299 17.8901 16.5872 18 16.875 18C17.1628 18 17.451 17.8901 17.6709 17.6702C18.1107 17.2308 18.1107 16.5178 17.6709 16.0784L10.5923 9.00019Z"
+                            fill="#B0B0B0" />
+                    </svg>
+                </div>
+                <div class="popup__title">K&K KC685 (15_SOLARIS FL)</div>
+                <div class="wrap__body">
+                    <div class="wrap__row">
+                        <div class="wrap__col gallery">
+                            <div class="gallery__cards cards">
+                                <div class="gallery__card card">
+                                    <div class="card__wrap">
+                                        <div class="card__image">
+                                            <img src="./images/modal/1.png" alt="Gallery card">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery__card card">
+                                    <div class="card__wrap">
+                                        <div class="card__image">
+                                            <img src="./images/services/27/6.png" alt="Gallery card">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery__card card">
+                                    <div class="card__wrap">
+                                        <div class="card__image">
+                                            <img src="./images/services/27/1.png" alt="Gallery card">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery__card card">
+                                    <div class="card__wrap">
+                                        <div class="card__image">
+                                            <img src="./images/services/27/2.png" alt="Gallery card">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery__card card">
+                                    <div class="card__wrap">
+                                        <div class="card__image">
+                                            <img src="./images/services/27/3.png" alt="Gallery card">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery__card card">
+                                    <div class="card__wrap">
+                                        <div class="card__image">
+                                            <img src="./images/services/27/4.png" alt="Gallery card">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery__card card">
+                                    <div class="card__wrap">
+                                        <div class="card__image">
+                                            <img src="./images/services/27/5.png" alt="Gallery card">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery__card card">
+                                    <div class="card__wrap">
+                                        <div class="card__image">
+                                            <img src="./images/services/27/6.png" alt="Gallery card">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery__btns">
+                                <div class="fave-btn btn faved">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.0097 1.21098C16.1828 0.403546 15.0404 -6.26306e-08 13.5819 -6.26306e-08C13.1783 -6.26306e-08 12.7664 0.0699827 12.3465 0.20988C11.9265 0.349879 11.5358 0.538757 11.1748 0.776377C10.8133 1.01393 10.5027 1.23701 10.2421 1.44528C9.9818 1.65362 9.73433 1.87503 9.49999 2.10933C9.26555 1.87503 9.01815 1.65362 8.75782 1.44528C8.49732 1.23701 8.18653 1.01406 7.82513 0.776377C7.46379 0.538655 7.07314 0.349913 6.65324 0.20988C6.23338 0.0700169 5.82152 -6.26306e-08 5.41791 -6.26306e-08C3.95952 -6.26306e-08 2.81702 0.403649 1.99023 1.21098C1.16343 2.01824 0.75 3.13797 0.75 4.57025C0.75 5.00646 0.826618 5.45585 0.979547 5.91785C1.13248 6.38009 1.30675 6.77402 1.50202 7.09948C1.69726 7.4249 1.91867 7.74225 2.16607 8.05153C2.41347 8.36078 2.59428 8.57391 2.70808 8.69109C2.82198 8.80828 2.91153 8.893 2.97662 8.94513L9.07028 14.8241C9.1875 14.9412 9.33071 15 9.49996 15C9.6692 15 9.81252 14.9412 9.92967 14.8241L16.0136 8.96445C17.5046 7.47382 18.2499 6.00897 18.2499 4.57012C18.25 3.13773 17.8366 2.01811 17.0097 1.21098ZM15.164 8.04664L9.49999 13.5056L3.8263 8.03679C2.60882 6.81962 2.00018 5.66388 2.00018 4.57012C2.00018 4.04285 2.07016 3.57729 2.21006 3.17375C2.35006 2.77013 2.52909 2.44939 2.74717 2.21177C2.9653 1.97409 3.23055 1.78056 3.54305 1.63071C3.85571 1.48099 4.16167 1.38005 4.4611 1.328C4.76053 1.276 5.07949 1.24997 5.41808 1.24997C5.75657 1.24997 6.12122 1.33289 6.51184 1.49895C6.90239 1.66495 7.26208 1.87329 7.59083 2.1239C7.91963 2.37469 8.20121 2.60903 8.43568 2.82705C8.67002 3.04527 8.86526 3.24534 9.02154 3.42765C9.13865 3.57093 9.29829 3.64255 9.50003 3.64255C9.70183 3.64255 9.86129 3.57093 9.97855 3.42765C10.1348 3.24534 10.3302 3.04517 10.5645 2.82705C10.7989 2.60903 11.0805 2.37479 11.4092 2.1239C11.738 1.87329 12.0977 1.66495 12.4884 1.49895C12.8789 1.33292 13.2437 1.24997 13.5822 1.24997C13.9207 1.24997 14.2396 1.276 14.5391 1.328C14.8387 1.38002 15.1446 1.48099 15.4572 1.63071C15.7697 1.78052 16.035 1.97419 16.253 2.21177C16.4711 2.44939 16.6502 2.77013 16.7902 3.17375C16.93 3.57729 16.9999 4.04285 16.9999 4.57012C16.9999 5.66388 16.388 6.82283 15.164 8.04664Z"
+                                            fill="#A0A0A0" />
+                                    </svg>
+                                </div>
+                                <div class="stats-btn btn">
+                                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M13.6765 2.47059C13.8949 2.47059 14.1044 2.55735 14.2588 2.71179C14.4132 2.86624 14.5 3.0757 14.5 3.29412V14H12.8529V3.29412C12.8529 3.0757 12.9397 2.86624 13.0941 2.71179C13.2486 2.55735 13.4581 2.47059 13.6765 2.47059ZM9.55882 4.94118C9.77724 4.94118 9.9867 5.02794 10.1411 5.18238C10.2956 5.33682 10.3824 5.54629 10.3824 5.76471V14H8.73529V5.76471C8.73529 5.54629 8.82206 5.33682 8.9765 5.18238C9.13094 5.02794 9.34041 4.94118 9.55882 4.94118ZM5.44118 0C5.65959 0 5.86906 0.0867645 6.0235 0.241206C6.17794 0.395648 6.26471 0.605116 6.26471 0.823529V14H4.61765V0.823529C4.61765 0.605116 4.70441 0.395648 4.85885 0.241206C5.0133 0.0867645 5.22276 0 5.44118 0V0ZM1.32353 6.58824C1.54194 6.58824 1.75141 6.675 1.90585 6.82944C2.06029 6.98388 2.14706 7.19335 2.14706 7.41176V14H0.5V7.41176C0.5 7.19335 0.586764 6.98388 0.741206 6.82944C0.895648 6.675 1.10512 6.58824 1.32353 6.58824Z"
+                                            fill="#A0A0A0" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="gallery__tags">
+                                <div class="gallery__tag new">NEW</div>
+                                <div class="gallery__tag discount">%</div>
+                                <div class="gallery__tag hit">ХИТ</div>
+                            </div>
+                        </div>
+                        <div class="wrap__col detail">
+                            <div class="detail__upper">
+                                <div class="detail__rated">
+                                    <div class="stars-wrap stars-4">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_8_18688)">
+                                                <path
+                                                    d="M8.49998 0.414062L11.1263 5.73623L17 6.58964L12.75 10.7324L13.753 16.582L8.49998 13.8202L3.24667 16.582L4.25001 10.7324L0 6.58964L5.87332 5.73623L8.49998 0.414062Z"
+                                                    fill="#FAC917" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_8_18688">
+                                                    <rect width="17" height="17" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_8_18688)">
+                                                <path
+                                                    d="M8.49998 0.414062L11.1263 5.73623L17 6.58964L12.75 10.7324L13.753 16.582L8.49998 13.8202L3.24667 16.582L4.25001 10.7324L0 6.58964L5.87332 5.73623L8.49998 0.414062Z"
+                                                    fill="#FAC917" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_8_18688">
+                                                    <rect width="17" height="17" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_8_18688)">
+                                                <path
+                                                    d="M8.49998 0.414062L11.1263 5.73623L17 6.58964L12.75 10.7324L13.753 16.582L8.49998 13.8202L3.24667 16.582L4.25001 10.7324L0 6.58964L5.87332 5.73623L8.49998 0.414062Z"
+                                                    fill="#FAC917" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_8_18688">
+                                                    <rect width="17" height="17" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_8_18688)">
+                                                <path
+                                                    d="M8.49998 0.414062L11.1263 5.73623L17 6.58964L12.75 10.7324L13.753 16.582L8.49998 13.8202L3.24667 16.582L4.25001 10.7324L0 6.58964L5.87332 5.73623L8.49998 0.414062Z"
+                                                    fill="#FAC917" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_8_18688">
+                                                    <rect width="17" height="17" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_8_18688)">
+                                                <path
+                                                    d="M8.49998 0.414062L11.1263 5.73623L17 6.58964L12.75 10.7324L13.753 16.582L8.49998 13.8202L3.24667 16.582L4.25001 10.7324L0 6.58964L5.87332 5.73623L8.49998 0.414062Z"
+                                                    fill="#FAC917" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_8_18688">
+                                                    <rect width="17" height="17" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="rate-wrap">(30)</div>
+                                </div>
+                                <div class="detail__brand">
+                                    <div class="image-cage">
+                                        <img src="./images/modal/2.png" alt="Brand">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail__sku">Артикул: <span>356835</span></div>
+                            <div class="detail__availability available">
+                                <div class="icon"></div>
+                                <span>В наличии</span>
+                            </div>
+                            <div class="detail__cheaper cta" data-action="found-cheaper">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M2 3C2 2.44772 2.44772 2 3 2H13C13.5523 2 14 1.55228 14 1C14 0.447715 13.5523 0 13 0H3C1.34315 0 0 1.34315 0 3V5V13C0 14.1046 0.89543 15 2 15H13C14.1046 15 15 14.1046 15 13V5C15 3.89543 14.1046 3 13 3H2ZM2 5L2 13H13V5H2ZM8 8H11V10H8V8Z"
+                                        fill="#999999" />
+                                </svg>
+                                <span>Нашли дешевле?</span>
+                            </div>
+                            <div class="detail__block sizes">
+                                <p>Размер</p>
+                                <div class="sizes__radios">
+                                    <div class="radio">
+                                        <input checked type="radio" data-text="XS" name="SIZES_1">
+                                    </div>
+                                    <div class="radio">
+                                        <input type="radio" data-text="S" name="SIZES_1">
+                                    </div>
+                                    <div class="radio">
+                                        <input type="radio" data-text="M" name="SIZES_1">
+                                    </div>
+                                    <div class="radio">
+                                        <input disabled type="radio" data-text="L" name="SIZES_1">
+                                    </div>
+                                    <div class="radio">
+                                        <input disabled type="radio" data-text="XL" name="SIZES_1">
+                                    </div>
+                                    <div class="radio">
+                                        <input disabled type="radio" data-text="XXL" name="SIZES_1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail__block colors">
+                                <p>Цвет</p>
+                                <div class="colors__radios">
+                                    <div class="radio">
+                                        <label style="background:#1C87D7;" for="c_1"></label>
+                                        <input checked type="radio" id="c_1" name="COLORS_1">
+                                    </div>
+                                    <div class="radio">
+                                        <label style="background:#00A05E;" for="c_2"></label>
+                                        <input type="radio" id="c_2" name="COLORS_1">
+                                    </div>
+                                    <div class="radio">
+                                        <label style="background:#F24841;" for="c_3"></label>
+                                        <input type="radio" id="c_3" name="COLORS_1">
+                                    </div>
+                                    <div class="radio">
+                                        <label style="background:#F879B0;" for="c_4"></label>
+                                        <input disabled type="radio" id="c_4" name="COLORS_1">
+                                    </div>
+                                    <div class="radio">
+                                        <label style="background:#EFBB2F;" for="c_5"></label>
+                                        <input disabled type="radio" id="c_5" name="COLORS_1">
+                                    </div>
+                                    <div class="radio">
+                                        <label style="background:#68CEF8;" for="c_6"></label>
+                                        <input type="radio" id="c_6" name="COLORS_1">
+                                    </div>
+                                    <div class="radio">
+                                        <label style="background:#47E589;" for="c_7"></label>
+                                        <input type="radio" id="c_7" name="COLORS_1>
+                                    </div>
+                                    <div class=" radio">
+                                        <label style="background:#213869;" for="c_8"></label>
+                                        <input type="radio" id="c_8" name="COLORS_1">
+                                    </div>
+                                    <div class="radio">
+                                        <label style="background:#EFBB2F;" for="c_9"></label>
+                                        <input disabled type="radio" id="c_9" name="COLORS_1">
+                                    </div>
+                                    <div class="radio">
+                                        <label style="background:#68CEF8;" for="c_10"></label>
+                                        <input type="radio" id="c_10" name="COLORS_1">
+                                    </div>
+                                    <div class="radio">
+                                        <label style="background:#BFEDFC;" for="c_11"></label>
+                                        <input disabled type="radio" id="c_11" name="COLORS_1">
+                                    </div>
+                                    <div class="radio">
+                                        <label style="background:#BFEDFC;" for="c_12"></label>
+                                        <input disabled type="radio" id="c_12" name="COLORS_1">
+                                    </div>
+                                    <div class="radio">
+                                        <label style="background:#976D49;" for="c_13"></label>
+                                        <input disabled type="radio" id="c_13" name="COLORS_1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail__text">
+                                <p>Краткое описание данного товара, которое можно с легкостью изменить или отключить
+                                    через систему управления сайтом.Краткое описание данного товара, которое можно с
+                                    легкостью изменить или отключить через систему управления сайтом.</p>
+                                <p>Краткое описание данного товара, которое можно с легкостью изменить или отключить
+                                    через систему управления сайтом.Краткое описание данного товара, которое можно с
+                                    легкостью изменить или отключить через систему управления сайтом.</p>
+                            </div>
+                            <div class="detail__more">
+                                <span>Подробнее</span>
+                                <svg width="9" height="7" viewBox="0 0 9 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4.89073 5.86732L8.83839 1.93317C9.05395 1.70415 9.05395 1.35384 8.83839 1.13823C8.62283 0.922672 8.25906 0.922672 8.04346 1.13823L4.50003 4.68166L0.956604 1.13823C0.727592 0.922672 0.377274 0.922672 0.161672 1.13823C-0.0538907 1.3538 -0.0538907 1.7041 0.161672 1.93317L4.09583 5.86732C4.32484 6.08289 4.67516 6.08289 4.89076 5.86732H4.89073Z"
+                                        fill="var(--color-accent)" />
+                                </svg>
+                            </div>
+                            <div class="detail__parameters show">
+                                <div class="title">Характеристики</div>
+                                <div class="item">
+                                    <span class="name">Наши предложения</span><span class="value">Хит, Акция, пм Новинка
+                                        -10%</span>
+                                </div>
+                                <div class="item">
+                                    <span class="name">Бренд бренд самый</span><span class="value">Prada</span>
+                                </div>
+                                <div class="item">
+                                    <span class="name">Длина ремня</span><span class="value">60см</span>
+                                </div>
+                                <div class="item">
+                                    <span class="name">Материал</span><span class="value">Натуральная кожа</span>
+                                </div>
+                                <div class="item">
+                                    <span class="name">Кабель USB</span><span class="value">В комплекте два кабеля с
+                                        разъемами USB и переходником на Type-C</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap__col info">
+                            <div class="info__price price">
+                                <div class="price__main">22.000 руб.</div>
+                                <div class="price__discount">31.600 руб.</div>
+                                <div class="discount-wrap">
+                                    <span>Экономия</span>
+                                    <div class="discount">543.00 руб.</div>
+                                </div>
+                            </div>
+                            <div class="info__time">
+                                <div class="title">До конца акции</div>
+                                <div class="timer">
+                                    <div class="block">
+                                        <div class="num">349</div>
+                                        <div class="text">дней</div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="num">01</div>
+                                        <div class="text">час</div>
+                                    </div>
+                                    <div class="block">
+                                        <div class="num">55</div>
+                                        <div class="text">мин.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info__cheaper cta" data-action="found-cheaper">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M2 3C2 2.44772 2.44772 2 3 2H13C13.5523 2 14 1.55228 14 1C14 0.447715 13.5523 0 13 0H3C1.34315 0 0 1.34315 0 3V5V13C0 14.1046 0.89543 15 2 15H13C14.1046 15 15 14.1046 15 13V5C15 3.89543 14.1046 3 13 3H2ZM2 5L2 13H13V5H2ZM8 8H11V10H8V8Z"
+                                        fill="#999999" />
+                                </svg>
+                                <span>Нашли дешевле?</span>
+                            </div>
+                            <div class="info__add">
+                                <div class="add-wrap">
+                                    <button
+                                        onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepDown()">
+                                        <svg width="8" height="1" viewBox="0 0 8 1" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line y1="0.5" x2="8" y2="0.5" stroke="#333333" />
+                                        </svg>
+                                    </button>
+                                    <input type="number" name="" id="" min="1" value="1" max="999">
+                                    <button
+                                        onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepUp()">
+                                        <svg width="9" height="9" viewBox="0 0 9 9" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="4.37114e-08" y1="4.5" x2="9" y2="4.5" stroke="#333333" />
+                                            <line x1="4.5" y1="9" x2="4.5" y2="-2.18557e-08" stroke="#333333" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="add-btn main-btn">
+                                    <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 3.93964C0 3.5953 0.279142 3.31616 0.623482 3.31616H2.68862C2.93712 3.31616 3.16189 3.46373 3.2607 3.69174L6.93319 12.1667H14.1041L16.7258 6.92328H6.81889C6.47455 6.92328 6.1954 6.64414 6.1954 6.2998C6.1954 5.95546 6.47455 5.67632 6.81889 5.67632H17.7346C17.9507 5.67632 18.1514 5.7882 18.265 5.97201C18.3786 6.15583 18.3889 6.38535 18.2923 6.57863L15.047 13.069C14.9414 13.2803 14.7255 13.4137 14.4894 13.4137H6.52387C6.27536 13.4137 6.05059 13.2661 5.95179 13.0381L2.27929 4.56313H0.623482C0.279142 4.56313 0 4.28398 0 3.93964Z"
+                                            fill="white" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.52315 16.8532C6.81208 16.8532 7.0463 16.619 7.0463 16.3301C7.0463 16.0411 6.81208 15.8069 6.52315 15.8069C6.23422 15.8069 6 16.0411 6 16.3301C6 16.619 6.23422 16.8532 6.52315 16.8532ZM6.52315 18.1002C7.50076 18.1002 8.29327 17.3077 8.29327 16.3301C8.29327 15.3525 7.50076 14.5599 6.52315 14.5599C5.54554 14.5599 4.75303 15.3525 4.75303 16.3301C4.75303 17.3077 5.54554 18.1002 6.52315 18.1002Z"
+                                            fill="white" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.1938 16.8532C14.4828 16.8532 14.717 16.619 14.717 16.3301C14.717 16.0411 14.4828 15.8069 14.1938 15.8069C13.9049 15.8069 13.6707 16.0411 13.6707 16.3301C13.6707 16.619 13.9049 16.8532 14.1938 16.8532ZM14.1938 18.1002C15.1714 18.1002 15.9639 17.3077 15.9639 16.3301C15.9639 15.3525 15.1714 14.5599 14.1938 14.5599C13.2162 14.5599 12.4237 15.3525 12.4237 16.3301C12.4237 17.3077 13.2162 18.1002 14.1938 18.1002Z"
+                                            fill="white" />
+                                    </svg>
+                                    <span>В корзину</span>
+                                </div>
+                            </div>
+                            <div class="info__buy">Купить в 1 клик</div>
+                            <div class="info__order main-btn">Заказать</div>
+                            <div class="info__added">
+                                <svg width="14" height="11" viewBox="0 0 14 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.3096 0.916954C13.0558 0.663099 12.6443 0.663099 12.3904 0.916954L4.60299 8.70444L1.60963 5.71108C1.3558 5.45723 0.944273 5.45725 0.690392 5.71108C0.436536 5.96491 0.436536 6.37645 0.690392 6.6303L4.14336 10.0832C4.39712 10.3371 4.80895 10.3369 5.06261 10.0832L13.3096 1.8362C13.5635 1.58237 13.5635 1.17081 13.3096 0.916954Z"
+                                        fill="white" />
+                                </svg>
+                                <span>В корзине</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="found-cheaper__popup popup">
+        <div class="popup-wrap"></div>
+        <div class="popup__wrap wrap container">
+            <div class="wrap">
+                <div class="popup__btn">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.5923 9.00019L17.6709 1.92162C18.1107 1.48221 18.1107 0.769247 17.6709 0.329838C17.2311 -0.109946 16.5189 -0.109946 16.0791 0.329838L9.00056 7.40841L1.92162 0.329838C1.48183 -0.109946 0.769622 -0.109946 0.329838 0.329838C-0.109946 0.769247 -0.109946 1.48221 0.329838 1.92162L7.40878 9.00019L0.329838 16.0788C-0.109946 16.5182 -0.109946 17.2311 0.329838 17.6705C0.54973 17.8901 0.837916 18 1.12573 18C1.41354 18 1.70172 17.8901 1.92162 17.6702L9.00056 10.5916L16.0791 17.6702C16.299 17.8901 16.5872 18 16.875 18C17.1628 18 17.451 17.8901 17.6709 17.6702C18.1107 17.2308 18.1107 16.5178 17.6709 16.0784L10.5923 9.00019Z"
+                            fill="#B0B0B0" />
+                    </svg>
+                </div>
+                <div class="popup__title">Нашли дешевле?</div>
+                <form action="" class="popup__form d_form">
+                    <div class="form__field">
+                        <label for="">Ваше имя<span>*</span></label>
+                        <input pattern="[A-Za-zА-Яа-яЁё\s]+" required type="text" placeholder="Иванов Иван"
+                            id="call_form-name">
+                        <div class="field-invalid">
+                            <div class="invalid-wrap">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_8_22180)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.80957 0C3.67551 0 0.30957 3.36594 0.30957 7.5C0.30957 11.6341 3.67551 15 7.80957 15C11.9436 15 15.3096 11.6341 15.3096 7.5C15.3096 3.36594 11.9436 0 7.80957 0ZM7.80957 1.36364C11.2067 1.36364 13.9459 4.1029 13.9459 7.5C13.9459 10.8971 11.2067 13.6364 7.80957 13.6364C4.41247 13.6364 1.67321 10.8971 1.67321 7.5C1.67321 4.1029 4.41247 1.36364 7.80957 1.36364ZM7.79893 3.39977C7.61833 3.40259 7.44623 3.47694 7.3204 3.60652C7.19456 3.7361 7.12528 3.9103 7.12775 4.09091V8.59064C7.12647 8.68099 7.14317 8.77069 7.17686 8.85454C7.21055 8.93838 7.26057 9.01469 7.32401 9.07903C7.38745 9.14337 7.46304 9.19447 7.5464 9.22934C7.62976 9.26421 7.71921 9.28217 7.80957 9.28217C7.89993 9.28217 7.98939 9.26421 8.07274 9.22934C8.1561 9.19447 8.23169 9.14337 8.29513 9.07903C8.35857 9.01469 8.40859 8.93838 8.44228 8.85454C8.47598 8.77069 8.49267 8.68099 8.49139 8.59064V4.09091C8.49264 3.99969 8.47557 3.90915 8.4412 3.82464C8.40682 3.74014 8.35584 3.66339 8.29127 3.59894C8.2267 3.5345 8.14985 3.48366 8.06528 3.44945C7.98071 3.41524 7.89015 3.39834 7.79893 3.39977ZM7.80957 10.2273C7.62874 10.2273 7.45532 10.2991 7.32745 10.427C7.19959 10.5548 7.12775 10.7283 7.12775 10.9091C7.12775 11.0899 7.19959 11.2633 7.32745 11.3912C7.45532 11.5191 7.62874 11.5909 7.80957 11.5909C7.9904 11.5909 8.16382 11.5191 8.29169 11.3912C8.41955 11.2633 8.49139 11.0899 8.49139 10.9091C8.49139 10.7283 8.41955 10.5548 8.29169 10.427C8.16382 10.2991 7.9904 10.2273 7.80957 10.2273Z"
+                                            fill="#FF0000" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_8_22180">
+                                            <rect width="15" height="15" fill="white" transform="translate(0.30957)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p>Некорректное имя</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__field form-phone">
+                        <label for="">Телефон<span>*</span></label>
+                        <input pattern="\+?[0-9\s\-\(\)]+" required type="text" placeholder="+375 (__) ___-__-__">
+                        <div class="field-invalid">
+                            <div class="invalid-wrap">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_8_22180)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.80957 0C3.67551 0 0.30957 3.36594 0.30957 7.5C0.30957 11.6341 3.67551 15 7.80957 15C11.9436 15 15.3096 11.6341 15.3096 7.5C15.3096 3.36594 11.9436 0 7.80957 0ZM7.80957 1.36364C11.2067 1.36364 13.9459 4.1029 13.9459 7.5C13.9459 10.8971 11.2067 13.6364 7.80957 13.6364C4.41247 13.6364 1.67321 10.8971 1.67321 7.5C1.67321 4.1029 4.41247 1.36364 7.80957 1.36364ZM7.79893 3.39977C7.61833 3.40259 7.44623 3.47694 7.3204 3.60652C7.19456 3.7361 7.12528 3.9103 7.12775 4.09091V8.59064C7.12647 8.68099 7.14317 8.77069 7.17686 8.85454C7.21055 8.93838 7.26057 9.01469 7.32401 9.07903C7.38745 9.14337 7.46304 9.19447 7.5464 9.22934C7.62976 9.26421 7.71921 9.28217 7.80957 9.28217C7.89993 9.28217 7.98939 9.26421 8.07274 9.22934C8.1561 9.19447 8.23169 9.14337 8.29513 9.07903C8.35857 9.01469 8.40859 8.93838 8.44228 8.85454C8.47598 8.77069 8.49267 8.68099 8.49139 8.59064V4.09091C8.49264 3.99969 8.47557 3.90915 8.4412 3.82464C8.40682 3.74014 8.35584 3.66339 8.29127 3.59894C8.2267 3.5345 8.14985 3.48366 8.06528 3.44945C7.98071 3.41524 7.89015 3.39834 7.79893 3.39977ZM7.80957 10.2273C7.62874 10.2273 7.45532 10.2991 7.32745 10.427C7.19959 10.5548 7.12775 10.7283 7.12775 10.9091C7.12775 11.0899 7.19959 11.2633 7.32745 11.3912C7.45532 11.5191 7.62874 11.5909 7.80957 11.5909C7.9904 11.5909 8.16382 11.5191 8.29169 11.3912C8.41955 11.2633 8.49139 11.0899 8.49139 10.9091C8.49139 10.7283 8.41955 10.5548 8.29169 10.427C8.16382 10.2991 7.9904 10.2273 7.80957 10.2273Z"
+                                            fill="#FF0000" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_8_22180">
+                                            <rect width="15" height="15" fill="white" transform="translate(0.30957)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p>Некорректное поле</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <label for="">Название товара<span>*</span></label>
+                        <input pattern="[A-Za-zА-Яа-яЁё\s]+" required type="text" placeholder="Введите название"
+                            id="call_form-name">
+                        <div class="field-invalid">
+                            <div class="invalid-wrap">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_8_22180)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.80957 0C3.67551 0 0.30957 3.36594 0.30957 7.5C0.30957 11.6341 3.67551 15 7.80957 15C11.9436 15 15.3096 11.6341 15.3096 7.5C15.3096 3.36594 11.9436 0 7.80957 0ZM7.80957 1.36364C11.2067 1.36364 13.9459 4.1029 13.9459 7.5C13.9459 10.8971 11.2067 13.6364 7.80957 13.6364C4.41247 13.6364 1.67321 10.8971 1.67321 7.5C1.67321 4.1029 4.41247 1.36364 7.80957 1.36364ZM7.79893 3.39977C7.61833 3.40259 7.44623 3.47694 7.3204 3.60652C7.19456 3.7361 7.12528 3.9103 7.12775 4.09091V8.59064C7.12647 8.68099 7.14317 8.77069 7.17686 8.85454C7.21055 8.93838 7.26057 9.01469 7.32401 9.07903C7.38745 9.14337 7.46304 9.19447 7.5464 9.22934C7.62976 9.26421 7.71921 9.28217 7.80957 9.28217C7.89993 9.28217 7.98939 9.26421 8.07274 9.22934C8.1561 9.19447 8.23169 9.14337 8.29513 9.07903C8.35857 9.01469 8.40859 8.93838 8.44228 8.85454C8.47598 8.77069 8.49267 8.68099 8.49139 8.59064V4.09091C8.49264 3.99969 8.47557 3.90915 8.4412 3.82464C8.40682 3.74014 8.35584 3.66339 8.29127 3.59894C8.2267 3.5345 8.14985 3.48366 8.06528 3.44945C7.98071 3.41524 7.89015 3.39834 7.79893 3.39977ZM7.80957 10.2273C7.62874 10.2273 7.45532 10.2991 7.32745 10.427C7.19959 10.5548 7.12775 10.7283 7.12775 10.9091C7.12775 11.0899 7.19959 11.2633 7.32745 11.3912C7.45532 11.5191 7.62874 11.5909 7.80957 11.5909C7.9904 11.5909 8.16382 11.5191 8.29169 11.3912C8.41955 11.2633 8.49139 11.0899 8.49139 10.9091C8.49139 10.7283 8.41955 10.5548 8.29169 10.427C8.16382 10.2991 7.9904 10.2273 7.80957 10.2273Z"
+                                            fill="#FF0000" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_8_22180">
+                                            <rect width="15" height="15" fill="white" transform="translate(0.30957)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p>Некорректное имя</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <label for="">Ссылка на другой магазин<span>*</span></label>
+                        <input pattern="[A-Za-zА-Яа-яЁё\s]+" required type="text"
+                            placeholder="https://market.webcompany.by/catalog/.dfl" id="call_form-name">
+                        <div class="field-invalid">
+                            <div class="invalid-wrap">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_8_22180)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.80957 0C3.67551 0 0.30957 3.36594 0.30957 7.5C0.30957 11.6341 3.67551 15 7.80957 15C11.9436 15 15.3096 11.6341 15.3096 7.5C15.3096 3.36594 11.9436 0 7.80957 0ZM7.80957 1.36364C11.2067 1.36364 13.9459 4.1029 13.9459 7.5C13.9459 10.8971 11.2067 13.6364 7.80957 13.6364C4.41247 13.6364 1.67321 10.8971 1.67321 7.5C1.67321 4.1029 4.41247 1.36364 7.80957 1.36364ZM7.79893 3.39977C7.61833 3.40259 7.44623 3.47694 7.3204 3.60652C7.19456 3.7361 7.12528 3.9103 7.12775 4.09091V8.59064C7.12647 8.68099 7.14317 8.77069 7.17686 8.85454C7.21055 8.93838 7.26057 9.01469 7.32401 9.07903C7.38745 9.14337 7.46304 9.19447 7.5464 9.22934C7.62976 9.26421 7.71921 9.28217 7.80957 9.28217C7.89993 9.28217 7.98939 9.26421 8.07274 9.22934C8.1561 9.19447 8.23169 9.14337 8.29513 9.07903C8.35857 9.01469 8.40859 8.93838 8.44228 8.85454C8.47598 8.77069 8.49267 8.68099 8.49139 8.59064V4.09091C8.49264 3.99969 8.47557 3.90915 8.4412 3.82464C8.40682 3.74014 8.35584 3.66339 8.29127 3.59894C8.2267 3.5345 8.14985 3.48366 8.06528 3.44945C7.98071 3.41524 7.89015 3.39834 7.79893 3.39977ZM7.80957 10.2273C7.62874 10.2273 7.45532 10.2991 7.32745 10.427C7.19959 10.5548 7.12775 10.7283 7.12775 10.9091C7.12775 11.0899 7.19959 11.2633 7.32745 11.3912C7.45532 11.5191 7.62874 11.5909 7.80957 11.5909C7.9904 11.5909 8.16382 11.5191 8.29169 11.3912C8.41955 11.2633 8.49139 11.0899 8.49139 10.9091C8.49139 10.7283 8.41955 10.5548 8.29169 10.427C8.16382 10.2991 7.9904 10.2273 7.80957 10.2273Z"
+                                            fill="#FF0000" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_8_22180">
+                                            <rect width="15" height="15" fill="white" transform="translate(0.30957)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p>Некорректное имя</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <label for="">Сообщение<span>*</span></label>
+                        <textarea name="" id="" rows="8" placeholder="Введите сообщение" required></textarea>
+                        <div class="field-invalid">
+                            <div class="invalid-wrap">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_8_22180)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.80957 0C3.67551 0 0.30957 3.36594 0.30957 7.5C0.30957 11.6341 3.67551 15 7.80957 15C11.9436 15 15.3096 11.6341 15.3096 7.5C15.3096 3.36594 11.9436 0 7.80957 0ZM7.80957 1.36364C11.2067 1.36364 13.9459 4.1029 13.9459 7.5C13.9459 10.8971 11.2067 13.6364 7.80957 13.6364C4.41247 13.6364 1.67321 10.8971 1.67321 7.5C1.67321 4.1029 4.41247 1.36364 7.80957 1.36364ZM7.79893 3.39977C7.61833 3.40259 7.44623 3.47694 7.3204 3.60652C7.19456 3.7361 7.12528 3.9103 7.12775 4.09091V8.59064C7.12647 8.68099 7.14317 8.77069 7.17686 8.85454C7.21055 8.93838 7.26057 9.01469 7.32401 9.07903C7.38745 9.14337 7.46304 9.19447 7.5464 9.22934C7.62976 9.26421 7.71921 9.28217 7.80957 9.28217C7.89993 9.28217 7.98939 9.26421 8.07274 9.22934C8.1561 9.19447 8.23169 9.14337 8.29513 9.07903C8.35857 9.01469 8.40859 8.93838 8.44228 8.85454C8.47598 8.77069 8.49267 8.68099 8.49139 8.59064V4.09091C8.49264 3.99969 8.47557 3.90915 8.4412 3.82464C8.40682 3.74014 8.35584 3.66339 8.29127 3.59894C8.2267 3.5345 8.14985 3.48366 8.06528 3.44945C7.98071 3.41524 7.89015 3.39834 7.79893 3.39977ZM7.80957 10.2273C7.62874 10.2273 7.45532 10.2991 7.32745 10.427C7.19959 10.5548 7.12775 10.7283 7.12775 10.9091C7.12775 11.0899 7.19959 11.2633 7.32745 11.3912C7.45532 11.5191 7.62874 11.5909 7.80957 11.5909C7.9904 11.5909 8.16382 11.5191 8.29169 11.3912C8.41955 11.2633 8.49139 11.0899 8.49139 10.9091C8.49139 10.7283 8.41955 10.5548 8.29169 10.427C8.16382 10.2991 7.9904 10.2273 7.80957 10.2273Z"
+                                            fill="#FF0000" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_8_22180">
+                                            <rect width="15" height="15" fill="white" transform="translate(0.30957)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p>Некорректное поле</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__privacy">
+                        <input type="checkbox" name="" id="call_form-privacy">
+                        <label for="call_form-privacy">Я согласен(на) на <a>обработку персональных данных</a></label>
+                    </div>
+                    <div class="form__submit">
+                        <input type="submit" value="Отправить" class="main-cta">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="log-in__popup popup">
+        <div class="popup-wrap"></div>
+        <div class="popup__wrap wrap container">
+            <div class="wrap">
+                <div class="popup__btn">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.5923 9.00019L17.6709 1.92162C18.1107 1.48221 18.1107 0.769247 17.6709 0.329838C17.2311 -0.109946 16.5189 -0.109946 16.0791 0.329838L9.00056 7.40841L1.92162 0.329838C1.48183 -0.109946 0.769622 -0.109946 0.329838 0.329838C-0.109946 0.769247 -0.109946 1.48221 0.329838 1.92162L7.40878 9.00019L0.329838 16.0788C-0.109946 16.5182 -0.109946 17.2311 0.329838 17.6705C0.54973 17.8901 0.837916 18 1.12573 18C1.41354 18 1.70172 17.8901 1.92162 17.6702L9.00056 10.5916L16.0791 17.6702C16.299 17.8901 16.5872 18 16.875 18C17.1628 18 17.451 17.8901 17.6709 17.6702C18.1107 17.2308 18.1107 16.5178 17.6709 16.0784L10.5923 9.00019Z"
+                            fill="#B0B0B0" />
+                    </svg>
+                </div>
+                <div class="popup__title">Вход в личный кабинет</div>
+                <form action="" class="popup__form d_form">
+                    <div class="form__field form__field-iconed">
+                        <label for="">Логин<span>*</span></label>
+                        <input pattern="[A-Za-zА-Яа-яЁё\s]+" required type="text" placeholder="Введите логин"
+                            id="call_form-name">
+                        <div class="field-icon">
+                            <svg width="13" height="16" viewBox="0 0 13 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.40466 8.52272C8.77233 8.52261 9.62415 6.15191 9.8473 4.20464C10.122 1.8056 8.98768 0 6.40466 0C3.82202 0 2.68717 1.8054 2.96203 4.20464C3.18536 6.15199 4.03705 8.52301 6.40466 8.52272Z"
+                                    fill="#A9A9A9" />
+                                <path
+                                    d="M12.8106 14.168C12.7847 13.4123 12.6962 12.6532 12.5643 11.9093C12.4046 11.0082 12.2012 9.68698 11.4144 9.09969C10.9594 8.76017 10.3702 8.64868 9.84932 8.44399C9.59574 8.34443 9.36874 8.24544 9.15556 8.13281C8.43612 8.92177 7.49805 9.33452 6.40551 9.33452C5.31341 9.33452 4.37534 8.9218 3.65604 8.13281C3.44287 8.24543 3.21575 8.34442 2.96228 8.44399C2.44142 8.64879 1.85221 8.76017 1.3972 9.09969C0.610357 9.68698 0.407011 11.0081 0.247294 11.9093C0.115372 12.6532 0.0268674 13.4124 0.00097264 14.168C-0.0190054 14.7532 0.269951 14.8353 0.759586 15.012C1.37277 15.2331 2.00581 15.3972 2.64299 15.5318C3.87381 15.7918 5.14246 15.9915 6.40563 16.0005C7.66882 15.9915 8.93758 15.7918 10.1683 15.5318C10.8056 15.3973 11.4386 15.2332 12.0517 15.012C12.5417 14.8354 12.8307 14.7534 12.8106 14.168H12.8106Z"
+                                    fill="#A9A9A9" />
+                            </svg>
+                        </div>
+                        <div class="field-invalid">
+                            <div class="invalid-wrap">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_8_22180)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.80957 0C3.67551 0 0.30957 3.36594 0.30957 7.5C0.30957 11.6341 3.67551 15 7.80957 15C11.9436 15 15.3096 11.6341 15.3096 7.5C15.3096 3.36594 11.9436 0 7.80957 0ZM7.80957 1.36364C11.2067 1.36364 13.9459 4.1029 13.9459 7.5C13.9459 10.8971 11.2067 13.6364 7.80957 13.6364C4.41247 13.6364 1.67321 10.8971 1.67321 7.5C1.67321 4.1029 4.41247 1.36364 7.80957 1.36364ZM7.79893 3.39977C7.61833 3.40259 7.44623 3.47694 7.3204 3.60652C7.19456 3.7361 7.12528 3.9103 7.12775 4.09091V8.59064C7.12647 8.68099 7.14317 8.77069 7.17686 8.85454C7.21055 8.93838 7.26057 9.01469 7.32401 9.07903C7.38745 9.14337 7.46304 9.19447 7.5464 9.22934C7.62976 9.26421 7.71921 9.28217 7.80957 9.28217C7.89993 9.28217 7.98939 9.26421 8.07274 9.22934C8.1561 9.19447 8.23169 9.14337 8.29513 9.07903C8.35857 9.01469 8.40859 8.93838 8.44228 8.85454C8.47598 8.77069 8.49267 8.68099 8.49139 8.59064V4.09091C8.49264 3.99969 8.47557 3.90915 8.4412 3.82464C8.40682 3.74014 8.35584 3.66339 8.29127 3.59894C8.2267 3.5345 8.14985 3.48366 8.06528 3.44945C7.98071 3.41524 7.89015 3.39834 7.79893 3.39977ZM7.80957 10.2273C7.62874 10.2273 7.45532 10.2991 7.32745 10.427C7.19959 10.5548 7.12775 10.7283 7.12775 10.9091C7.12775 11.0899 7.19959 11.2633 7.32745 11.3912C7.45532 11.5191 7.62874 11.5909 7.80957 11.5909C7.9904 11.5909 8.16382 11.5191 8.29169 11.3912C8.41955 11.2633 8.49139 11.0899 8.49139 10.9091C8.49139 10.7283 8.41955 10.5548 8.29169 10.427C8.16382 10.2991 7.9904 10.2273 7.80957 10.2273Z"
+                                            fill="#FF0000" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_8_22180">
+                                            <rect width="15" height="15" fill="white" transform="translate(0.30957)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p>Некорректное имя</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__field form__field-iconed password-look">
+                        <label for="">Пароль<span>*</span></label>
+                        <input required type="password" placeholder="*****4" value="12345678" id="call_form-name">
+                        <div class="field-icon">
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.8489 7.1905C16.8489 7.1905 13.3134 3 8.50002 3C3.68692 3 0.151096 7.1905 0.151096 7.1905C-0.0503652 7.42925 -0.0503652 7.82003 0.151096 8.05907C0.151096 8.05907 3.68692 12.2493 8.50002 12.2493C13.3131 12.2493 16.8487 8.05878 16.8487 8.05878C17.0504 7.82003 17.0504 7.42925 16.8489 7.1905ZM8.50002 11.1847C6.53397 11.1847 4.93991 9.59098 4.93991 7.62464C4.93991 5.6583 6.53397 4.06453 8.50002 4.06453C10.4661 4.06453 12.0601 5.65859 12.0601 7.62464C12.0601 9.59069 10.4664 11.1847 8.50002 11.1847Z"
+                                    fill="#A9A9A9" />
+                                <path
+                                    d="M10.1771 6.87821C9.75886 6.87821 9.41953 6.53917 9.41953 6.12064C9.41953 6.01138 9.44294 5.90732 9.48456 5.81368C9.19147 5.65355 8.85532 5.5625 8.49807 5.5625C7.36012 5.5625 6.4375 6.48512 6.4375 7.62307C6.4375 8.76102 7.36012 9.68392 8.49807 9.68392C9.63602 9.68392 10.5586 8.76131 10.5586 7.62336C10.5586 7.34732 10.504 7.08401 10.4054 6.84324C10.3335 6.86578 10.2566 6.87821 10.1771 6.87821Z"
+                                    fill="#A9A9A9" />
+                            </svg>
+                        </div>
+                        <div class="field-invalid">
+                            <div class="invalid-wrap">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_8_22180)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.80957 0C3.67551 0 0.30957 3.36594 0.30957 7.5C0.30957 11.6341 3.67551 15 7.80957 15C11.9436 15 15.3096 11.6341 15.3096 7.5C15.3096 3.36594 11.9436 0 7.80957 0ZM7.80957 1.36364C11.2067 1.36364 13.9459 4.1029 13.9459 7.5C13.9459 10.8971 11.2067 13.6364 7.80957 13.6364C4.41247 13.6364 1.67321 10.8971 1.67321 7.5C1.67321 4.1029 4.41247 1.36364 7.80957 1.36364ZM7.79893 3.39977C7.61833 3.40259 7.44623 3.47694 7.3204 3.60652C7.19456 3.7361 7.12528 3.9103 7.12775 4.09091V8.59064C7.12647 8.68099 7.14317 8.77069 7.17686 8.85454C7.21055 8.93838 7.26057 9.01469 7.32401 9.07903C7.38745 9.14337 7.46304 9.19447 7.5464 9.22934C7.62976 9.26421 7.71921 9.28217 7.80957 9.28217C7.89993 9.28217 7.98939 9.26421 8.07274 9.22934C8.1561 9.19447 8.23169 9.14337 8.29513 9.07903C8.35857 9.01469 8.40859 8.93838 8.44228 8.85454C8.47598 8.77069 8.49267 8.68099 8.49139 8.59064V4.09091C8.49264 3.99969 8.47557 3.90915 8.4412 3.82464C8.40682 3.74014 8.35584 3.66339 8.29127 3.59894C8.2267 3.5345 8.14985 3.48366 8.06528 3.44945C7.98071 3.41524 7.89015 3.39834 7.79893 3.39977ZM7.80957 10.2273C7.62874 10.2273 7.45532 10.2991 7.32745 10.427C7.19959 10.5548 7.12775 10.7283 7.12775 10.9091C7.12775 11.0899 7.19959 11.2633 7.32745 11.3912C7.45532 11.5191 7.62874 11.5909 7.80957 11.5909C7.9904 11.5909 8.16382 11.5191 8.29169 11.3912C8.41955 11.2633 8.49139 11.0899 8.49139 10.9091C8.49139 10.7283 8.41955 10.5548 8.29169 10.427C8.16382 10.2991 7.9904 10.2273 7.80957 10.2273Z"
+                                            fill="#FF0000" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_8_22180">
+                                            <rect width="15" height="15" fill="white" transform="translate(0.30957)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <p>Некорректное имя</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__privacy">
+                        <div>
+                            <input type="checkbox" name="" id="call_form-privacy">
+                            <label for="call_form-privacy">Запомнить меня</label>
+                        </div>
+                        <p><a href="">Забыли пароль?</a></p>
+                    </div>
+                    <div class="form__submit">
+                        <input type="submit" value="Войти" class="main-cta">
+                    </div>
+                    <div class="form__socials">
+                        <p>Быстрый вход через соцсети</p>
+                        <div class="items-wrap">
+                            <div class="form__social instagram">
+                                <div class="img-cage">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.9945 10.4324C9.33766 10.4324 10.4265 9.34352 10.4265 8.00036C10.4265 6.6572 9.33766 5.56836 7.9945 5.56836C6.65134 5.56836 5.5625 6.6572 5.5625 8.00036C5.5625 9.34352 6.65134 10.4324 7.9945 10.4324Z"
+                                            fill="white" />
+                                        <path
+                                            d="M11.3424 0.400391H4.65444C3.52607 0.401669 2.44428 0.850478 1.6464 1.64836C0.848525 2.44623 0.399715 3.52802 0.398438 4.65639V11.3444C0.399715 12.4728 0.848525 13.5545 1.6464 14.3524C2.44428 15.1503 3.52607 15.5991 4.65444 15.6004H11.3424C12.4708 15.5991 13.5526 15.1503 14.3505 14.3524C15.1483 13.5545 15.5972 12.4728 15.5984 11.3444V4.65639C15.5972 3.52802 15.1483 2.44623 14.3505 1.64836C13.5526 0.850478 12.4708 0.401669 11.3424 0.400391ZM7.99844 11.6484C7.27693 11.6484 6.57163 11.4344 5.97172 11.0336C5.37181 10.6327 4.90423 10.063 4.62813 9.39642C4.35202 8.72983 4.27977 7.99634 4.42053 7.2887C4.56129 6.58106 4.90873 5.93105 5.41891 5.42087C5.92909 4.91068 6.57911 4.56324 7.28675 4.42249C7.99439 4.28173 8.72788 4.35397 9.39447 4.63008C10.0611 4.90619 10.6308 5.37376 11.0316 5.97367C11.4325 6.57358 11.6464 7.27888 11.6464 8.00039C11.6453 8.96756 11.2607 9.89481 10.5768 10.5787C9.89286 11.2626 8.96561 11.6473 7.99844 11.6484ZM11.9504 4.96039C11.7701 4.96039 11.5937 4.9069 11.4438 4.80669C11.2938 4.70648 11.1769 4.56404 11.1079 4.3974C11.0388 4.23075 11.0208 4.04738 11.056 3.87047C11.0912 3.69356 11.178 3.53105 11.3056 3.40351C11.4331 3.27596 11.5956 3.1891 11.7725 3.15391C11.9494 3.11872 12.1328 3.13679 12.2994 3.20581C12.4661 3.27484 12.6085 3.39173 12.7087 3.54171C12.8089 3.69169 12.8624 3.86801 12.8624 4.04839C12.8624 4.29027 12.7664 4.52224 12.5953 4.69327C12.4243 4.86431 12.1923 4.96039 11.9504 4.96039Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="form__social twitter">
+                                <div class="img-cage">
+                                    <svg width="18" height="15" viewBox="0 0 18 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.3092 2.17299C16.6942 2.43806 16.0262 2.62891 15.3371 2.70313C16.0474 2.27902 16.5882 1.61105 16.8426 0.815849C16.1853 1.20815 15.4431 1.49442 14.6691 1.64286C14.0435 0.974889 13.1529 0.561385 12.1669 0.561385C10.269 0.561385 8.74219 2.09877 8.74219 3.98605C8.74219 4.25112 8.77399 4.51618 8.82701 4.77065C5.98549 4.62221 3.45145 3.26507 1.76562 1.18694C1.46875 1.69587 1.29911 2.27902 1.29911 2.91518C1.29911 4.10268 1.90346 5.15234 2.82589 5.7673C2.26395 5.74609 1.73382 5.58705 1.2779 5.33259C1.2779 5.34319 1.2779 5.3644 1.2779 5.375C1.2779 7.03962 2.4548 8.41797 4.024 8.73605C3.73772 8.81027 3.43025 8.85268 3.12277 8.85268C2.90011 8.85268 2.68806 8.83147 2.476 8.79967C2.91071 10.1568 4.17243 11.1429 5.67801 11.1747C4.50112 12.0971 3.02734 12.6378 1.42634 12.6378C1.14007 12.6378 0.875 12.6272 0.59933 12.5954C2.11551 13.5709 3.91797 14.1328 5.85826 14.1328C12.1562 14.1328 15.6021 8.91629 15.6021 4.38895C15.6021 4.24051 15.6021 4.09208 15.5915 3.94364C16.2595 3.45592 16.8426 2.85156 17.3092 2.17299Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="form__social odnoklassniki">
+                                <div class="img-cage">
+                                    <svg width="13" height="20" viewBox="0 0 13 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.45368 10.1981C9.10435 10.1981 11.2673 8.04576 11.2673 5.39509C11.2673 2.73382 9.10435 0.581472 6.45368 0.581472C3.80301 0.581472 1.64007 2.73382 1.64007 5.39509C1.64007 8.04576 3.80301 10.1981 6.45368 10.1981ZM6.45368 3.02009C7.75781 3.02009 8.81808 4.08036 8.81808 5.39509C8.81808 6.69922 7.75781 7.75949 6.45368 7.75949C5.14955 7.75949 4.08929 6.69922 4.08929 5.39509C4.08929 4.08036 5.14955 3.02009 6.45368 3.02009ZM11.9989 10.7812C11.7232 10.2405 10.9704 9.7846 9.97377 10.5692C9.97377 10.5692 8.62723 11.6401 6.45368 11.6401C4.28013 11.6401 2.93359 10.5692 2.93359 10.5692C1.93694 9.7846 1.18415 10.2405 0.908482 10.7812C0.441964 11.7355 0.972098 12.1914 2.1808 12.976C3.20926 13.6334 4.63002 13.8772 5.54185 13.9727L4.77846 14.736C3.69699 15.8069 2.66853 16.846 1.94754 17.567C1.51283 18.0017 1.51283 18.7015 1.94754 19.1256L2.07478 19.2634C2.49888 19.6875 3.19866 19.6875 3.63337 19.2634L6.46429 16.4219C7.54576 17.5033 8.58482 18.5424 9.2952 19.2634C9.72991 19.6875 10.4297 19.6875 10.8644 19.2634L10.9916 19.1256C11.4157 18.7015 11.4157 18.0017 10.9916 17.567L8.16071 14.736L7.38672 13.9727C8.30915 13.8772 9.70871 13.6228 10.7266 12.976C11.9353 12.1914 12.4654 11.7355 11.9989 10.7812Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="form__social facebook">
+                                <div class="img-cage">
+                                    <svg width="10" height="17" viewBox="0 0 10 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.80026 0.515487C9.52318 0.477121 8.56878 0.400391 7.46045 0.400391C5.14116 0.400391 3.55049 1.724 3.55049 4.15061V6.24152H0.933594V9.08056H3.55049V16.3604H6.69077V9.08056H9.29741L9.69764 6.24152H6.69077V4.42876C6.69077 3.61349 6.9268 3.0476 8.18907 3.0476H9.80026V0.515487Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="form__social mailru">
+                                <div class="img-cage">
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M13.6485 8.91615C13.5405 6.87264 11.981 5.64371 10.0981 5.64371H10.0269C7.85389 5.64371 6.6487 7.3062 6.6487 9.19471C6.6487 11.309 8.10673 12.6448 10.0186 12.6448C12.1501 12.6448 13.5517 11.1259 13.6532 9.32888L13.6485 8.91615ZM10.0377 3.81516C11.4898 3.81516 12.8552 4.43942 13.8573 5.41712V5.42085C13.8573 4.95159 14.182 4.59765 14.6329 4.59765L14.7468 4.59709C15.4518 4.59709 15.5966 5.24571 15.5966 5.45137L15.6001 12.7486C15.5503 13.2266 16.1068 13.4732 16.4155 13.1666C17.6201 11.9625 19.0608 6.97628 15.6666 4.08732C12.5032 1.39383 8.25864 1.83759 6.00129 3.35145C3.60165 4.96137 2.06601 8.52508 3.55776 11.8723C5.18369 15.523 9.83653 16.6118 12.6017 15.5252C14.0021 14.9758 14.6489 16.8171 13.1945 17.4186C10.9971 18.3291 4.88102 18.2372 2.02378 13.4228C0.093522 10.1718 0.196129 4.4519 5.31597 1.48827C9.2324 -0.779221 14.3962 -0.151796 17.5098 3.01174C20.7645 6.31911 20.5746 12.5119 17.3999 14.9192C15.9616 16.0129 13.8254 14.9486 13.8389 13.3547L13.8241 12.8336C12.8224 13.8004 11.4898 14.3645 10.0377 14.3645C7.16858 14.3645 4.64426 11.9092 4.64426 9.11823C4.64426 6.29953 7.16858 3.81516 10.0377 3.81516Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="form__social vk">
+                                <div class="img-cage">
+                                    <svg width="21" height="12" viewBox="0 0 21 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.8375 1.07864C19.8375 1.07864 19.699 0.682811 18.838 0.791665L15.988 0.811457C15.7703 0.781769 15.612 0.870831 15.612 0.870831C15.612 0.870831 15.4438 0.959894 15.3646 1.1776C14.8995 2.375 14.3057 3.40417 14.3057 3.40417C13.0391 5.56146 12.5245 5.68021 12.3167 5.54167C11.8318 5.23489 11.9604 4.29479 11.9604 3.62187C11.9604 1.52396 12.2771 0.653123 11.337 0.425519C11.0302 0.356248 10.8026 0.306769 10.001 0.296874C8.98177 0.286977 8.12083 0.296874 7.63594 0.534374C7.30938 0.692706 7.06198 1.04896 7.21042 1.06875C7.39844 1.09844 7.82396 1.1875 8.05156 1.49427C8.05156 1.49427 8.29896 1.9 8.33854 2.79062C8.4474 5.25469 7.94271 5.56146 7.94271 5.56146C7.55677 5.76927 6.88386 5.42292 5.89427 3.38437C5.89427 3.38437 5.32031 2.375 4.875 1.26667C4.79583 1.05885 4.6375 0.949999 4.6375 0.949999C4.6375 0.949999 4.45938 0.811457 4.20208 0.771873L1.49063 0.791665C1.075 0.791665 0.926563 0.979685 0.926563 0.979685C0.926563 0.979685 0.778125 1.13802 0.916667 1.46458C3.03438 6.44219 5.44896 8.93594 5.44896 8.93594C5.44896 8.93594 7.65573 11.2417 10.1594 11.0833H11.2974C11.6438 11.0536 11.8219 10.8656 11.8219 10.8656C11.8219 10.8656 11.9802 10.6875 11.9703 10.3609C11.9505 8.83698 12.663 8.60937 12.663 8.60937C13.3557 8.39167 14.2464 10.0839 15.1964 10.737C15.1964 10.737 15.9188 11.2318 16.463 11.1229L18.9964 11.0833C20.3323 11.0734 19.699 9.9651 19.699 9.9651C19.6495 9.87604 19.3328 9.19323 17.8089 7.77812C16.2255 6.30365 16.4333 6.54114 18.3531 3.98802C19.5208 2.43437 19.9859 1.48437 19.8375 1.07864Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__bottom">
+                        <a class="btn">Регистрация</a>
+                        <p>Вам будет доступно управление рассылками, использование персональных данных, связь профиля с
+                            аккаунтом соцсети и т.д.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

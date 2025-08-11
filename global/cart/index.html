@@ -1,0 +1,158 @@
+<div class="cart-window popup">
+    <div class="popup__btn">
+        <svg width="31" height="25" viewBox="0 0 31 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.5 5H30L24.5 16H11L4.5 1H1" stroke="white" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <circle cx="11" cy="22" r="2" stroke="white" stroke-width="2" />
+            <circle cx="24" cy="22" r="2" stroke="white" stroke-width="2" />
+        </svg>
+        <p>12</p>
+    </div>
+    <div class="popup-wrap"></div>
+    <div class="popup__wrap wrap">
+        <!-- <div class="wrap__empty empty">
+            <div class="empty__col-text">
+                <div class="empty__col-title">Корзина пуста</div>
+                <div class="empty__col-subtitle">Перейдите в каталог и закажите интересующий вас товар!</div>
+                <a class="empty__col-btn main-side-btn">Перейти в корзину</a>
+            </div>
+            <div class="empty__col-icon">
+                <svg width="120" height="99" viewBox="0 0 120 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M114.86 18.4805H44.0003C41.693 18.4805 40.3798 20.1274 41.064 22.1623L52.2737 52.4791C52.8259 54.1149 54.7802 55.4405 56.6361 55.4405H103.093C104.949 55.4405 106.901 54.1149 107.448 52.4791L117.217 21.4463C117.774 19.8082 116.72 18.4805 114.86 18.4805Z"
+                        fill="#E6E6E6" />
+                    <path
+                        d="M49.7331 98.8785C55.0696 98.8785 59.3958 94.5755 59.3958 89.2674C59.3958 83.9593 55.0696 79.6562 49.7331 79.6562C44.3966 79.6562 40.0704 83.9593 40.0704 89.2674C40.0704 94.5755 44.3966 98.8785 49.7331 98.8785Z"
+                        fill="#E6E6E6" />
+                    <path
+                        d="M102.858 98.9996C108.195 98.9996 112.521 94.6965 112.521 89.3885C112.521 84.0804 108.195 79.7773 102.858 79.7773C97.5214 79.7773 93.1953 84.0804 93.1953 89.3885C93.1953 94.6965 97.5214 98.9996 102.858 98.9996Z"
+                        fill="#E6E6E6" />
+                    <path
+                        d="M114.529 64.7504H45.711L23.0875 0H5.47149C2.44904 0 0 2.43598 0 5.44231C0 8.44864 2.44904 10.8846 5.47149 10.8846H15.3049L37.9284 75.6351H114.529C117.551 75.6351 120 73.1991 120 70.1928C120 67.1864 117.551 64.7504 114.529 64.7504Z"
+                        fill="#E6E6E6" />
+                </svg>
+            </div>
+        </div> -->
+        <div class="wrap__head">
+            <p>Корзина</p>
+            <div class="wrap__head-btn">
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="Vector 8" d="M1 1L4.5 4.5M8 8L4.5 4.5M4.5 4.5L8 1L1 8" stroke="#6C6C6C"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <p>Очистить корзину</p>
+            </div>
+        </div>
+        <div class="wrap__body">
+            <table>
+                <thead>
+                    <th>Название</th>
+                    <th>Цена</th>
+                    <th>Кол-во</th>
+                    <th>Итого</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="img-cage">
+                                <img src="images/cart/cart-image-1.png" alt="Cart image">
+                            </div>
+                            <p>Дверь алюминиевая с стеклянными вставками «Летний бриз» длинное...</p>
+                        </td>
+                        <td>22.50</td>
+                        <td class="number-input">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                            <input class="quantity" min="1" max="9999" name="quantity" value="1" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="plus"></button>
+                        </td>
+                        <td>
+                            <span>22.50</span>
+                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="delete-item" d="M1 1L4.5 4.5M8 8L4.5 4.5M4.5 4.5L8 1L1 8" stroke="black" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="img-cage">
+                                <img src="images/cart/cart-image-2.png" alt="Cart image">
+                            </div>
+                            <p>Дверь алюминиевая с стеклянными вставками</p>
+                        </td>
+                        <td>220 200.50</td>
+                        <td class="number-input">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                            <input class="quantity" min="1" max="9999" name="quantity" value="1" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="plus"></button>
+                        </td>
+                        <td>
+                            <span>22.50</span>
+                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="delete-item" d="M1 1L4.5 4.5M8 8L4.5 4.5M4.5 4.5L8 1L1 8" stroke="black" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="img-cage">
+                                <img src="images/cart/cart-image-2.png" alt="Cart image">
+                            </div>
+                            <p>Дверь алюминиевая с стеклянными вставками</p>
+                        </td>
+                        <td>220 200.50</td>
+                        <td class="number-input">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                            <input class="quantity" min="1" max="9999" name="quantity" value="1" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="plus"></button>
+                        </td>
+                        <td>
+                            <span>22.50</span>
+                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="delete-item" d="M1 1L4.5 4.5M8 8L4.5 4.5M4.5 4.5L8 1L1 8" stroke="black" />
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="img-cage">
+                                <img src="images/cart/cart-image-2.png" alt="Cart image">
+                            </div>
+                            <p>Дверь алюминиевая с стеклянными вставками</p>
+                        </td>
+                        <td>220 200.50</td>
+                        <td class="number-input">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                            <input class="quantity" min="1" max="9999" name="quantity" value="1" type="number">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                class="plus"></button>
+                        </td>
+                        <td>
+                            <span>22.50</span>
+                            <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path id="delete-item" d="M1 1L4.5 4.5M8 8L4.5 4.5M4.5 4.5L8 1L1 8" stroke="black" />
+                            </svg>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="wrap__tail">
+            <div class="wrap__tail-back popup__btn">
+                <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.16173 4.10927L4.09589 0.161609C4.3249 -0.0539542 4.67522 -0.0539541 4.89082 0.161609C5.10638 0.377172 5.10638 0.740939 4.89082 0.95654L1.34739 4.49997L4.89082 8.0434C5.10638 8.27241 5.10638 8.62273 4.89082 8.83833C4.67526 9.05389 4.32495 9.05389 4.09589 8.83833L0.16173 4.90417C-0.0538328 4.67516 -0.0538328 4.32484 0.16173 4.10924L0.16173 4.10927Z"
+                        fill="var(--color-accent)" />
+                </svg>
+                <span>Продолжить покупки</span>
+            </div>
+            <div class="wrap__tail-btns">
+                <a class="main-side-btn">Перейти в корзину</a>
+                <a class="main-btn">Быстрый заказ</a>
+            </div>
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" href="global/cart/style.css">

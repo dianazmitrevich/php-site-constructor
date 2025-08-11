@@ -1,0 +1,57 @@
+.page-title {
+    margin-bottom: 0.76em;
+}
+
+.content__wrapper {
+    margin-bottom: 60px;
+    margin-top: 4px;
+}
+
+.content .tabs__item-inner {
+    height: fit-content;
+    padding-bottom: 0;
+}
+
+.content .inner__form {
+    max-width: 435px;
+    width: 100%;
+}
+
+.content .inner__form .form__submit {
+    margin-top: 30px;
+}
+
+.content .inner__form .form__field .field-tip {
+    color: var(--settings-side-text);
+    font-size: 1.2em;
+    margin-top: 5px;
+    display: block;
+}
+
+.content .inner__form .form__field:has(input:invalid:not(:focus)) .field-tip {
+    display: none;
+}
+
+.content .inner__form .form__field:has(input:invalid:placeholder-shown) .field-tip {
+    display: block;
+}
+
+@media (max-width: 1000px) {
+    .content .tabs__item-inner {
+        top: 0 !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .content__wrapper {
+        margin-bottom: 40px;
+    }
+
+    .content .inner__form {
+        max-width: 100%;
+    }
+
+    .content .inner__form .form__submit .main-cta {
+        width: 100%;
+    }
+}

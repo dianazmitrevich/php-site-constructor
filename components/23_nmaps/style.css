@@ -1,0 +1,321 @@
+.main-maps .maps__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-maps .maps__wrapper {
+    z-index: 0;
+}
+
+.main-maps .maps__info:has(.maps__title.d-none) {
+    flex-direction: column-reverse;
+}
+
+.main-maps .maps__info:has(.maps__title.d-none) .maps__subtitle {
+    order: 2;
+    margin-bottom: -20px;
+}
+
+.main-maps .maps__wrapper.padded-b {
+    padding-bottom: 60px;
+}
+
+.main-maps .maps__wrapper.padded-t {
+    padding-top: 60px;
+}
+
+.main-maps .maps__wrapper.padded-b .maps__text,
+.main-maps .maps__wrapper.padded-t .maps__text {
+    margin-bottom: 15px;
+}
+
+.main-maps .maps__wrapper.align-right .maps__title,
+.main-maps .maps__wrapper.align-right .maps__subtitle {
+    text-align: right;
+    margin-left: auto;
+}
+
+.main-maps .maps__wrapper.align-center .maps__title,
+.main-maps .maps__wrapper.align-center .maps__subtitle {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-maps .maps__title {
+    font-size: 2.6em;
+    font-weight: 800;
+    line-height: 115%;
+    letter-spacing: -1%;
+    margin-bottom: 0.76em;
+    max-width: 571px;
+    position: relative;
+    z-index: 2;
+}
+
+.main-maps .maps__subtitle {
+    font-size: 1.5em;
+    line-height: 1.26em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+}
+
+.main-maps .maps__row {
+    display: flex;
+    width: 100%;
+}
+
+.main-maps .maps__col-detail {
+    width: 393px;
+    flex-grow: 1;
+    position: relative;
+}
+
+.main-maps .maps__col-detail .detail-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 9;
+    cursor: pointer;
+    transition: all 0.24s ease-in-out;
+}
+
+.main-maps .maps__col-detail .detail-close:hover {
+    opacity: 0.5;
+}
+
+.main-maps.listed .maps__col-detail {
+    display: none;
+}
+
+.main-maps.listed .maps__list {
+    width: 393px;
+    border: 1px solid var(--color-mid);
+    border-right: 0;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    transition: all 0.24s ease-in-out;
+}
+
+.main-maps.listed .maps__list .maps__subtitle {
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+.main-maps.listed .maps__list .maps__title {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 0;
+}
+
+.main-maps.listed .maps__list .list {
+    max-height: 340px;
+    overflow-y: auto;
+    position: relative;
+}
+
+.main-maps.listed .maps__list .list::-webkit-scrollbar {
+    width: 2px;
+}
+
+.main-maps.listed .maps__list .list::-webkit-scrollbar-track {
+    background: transparent;
+    width: 2px;
+}
+
+.main-maps.listed .maps__list .list::-webkit-scrollbar-thumb {
+    background: #a3a3a3;
+    border-radius: 1px;
+    width: 2px;
+}
+
+.main-maps.listed .maps__list .list:before {
+    content: "";
+    height: 35px;
+    width: 100%;
+    top: -10px;
+    display: block;
+    background: var(--maps-gradient-before);
+    position: sticky;
+    margin-top: -35px;
+}
+
+.main-maps.listed .maps__list .list:after {
+    content: "";
+    height: 35px;
+    width: 100%;
+    bottom: -10px;
+    display: block;
+    background: var(--maps-gradient-after);
+    position: sticky;
+    margin-top: -35px;
+}
+
+.main-maps.listed .maps__list .list__item {
+    padding: 20px 78px 20px 30px;
+    border-bottom: 1px solid var(--color-mid);
+    transition: all 0.24s ease-in-out;
+    cursor: pointer;
+}
+
+.main-maps.listed .maps__list .list__item:last-of-type {
+    border-bottom: 0;
+}
+
+.main-maps.listed .maps__list .list__item:hover {
+    box-shadow: var(--cards-hover);
+}
+
+.main-maps.listed .maps__list .list__item .text {
+    font-size: 1.3em;
+    line-height: 1.38em;
+}
+
+.main-maps.listed .maps__list .list__item .subtext {
+    font-size: 1.3em;
+    color: var(--color-icon);
+    margin-top: 0.23em;
+    line-height: 1.38em;
+}
+
+.main-maps .maps__col-map {
+    width: calc(100% - 393px);
+    flex-grow: 1;
+}
+
+.main-maps .maps__col-map .map-wrap {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-maps.listed .maps__col-map .map-wrap {
+    border-radius: 0;
+}
+
+.main-maps .maps__detail {
+    padding-right: 40px;
+}
+
+.main-maps .maps__detail .detail__big {
+    font-size: 1.9em;
+    line-height: 1.38em;
+}
+
+.main-maps .maps__detail .detail__title {
+    color: var(--color-icon);
+    font-size: 1.1em;
+    margin-top: 0.91em;
+    text-transform: uppercase;
+}
+
+.main-maps .maps__detail .detail__text {
+    font-size: 1.3em;
+    margin-top: 0.15em;
+    line-height: 1.38em;
+}
+
+.main-maps .maps__detail .detail__btn {
+    margin-top: 20px;
+}
+
+@media (max-width: 1240px) {
+    .main-maps .maps__wrapper {
+        padding-right: 0;
+    }
+
+    .main-maps .maps__col-map .map-wrap {
+        border-radius: 10px 0 0 10px;
+    }
+}
+
+@media (max-width: 880px) {
+    .main-maps .maps__wrapper {
+        padding-left: 0;
+    }
+
+    .main-maps .maps__row {
+        flex-direction: column;
+    }
+
+    .main-maps .maps__col-map,
+    .main-maps .maps__col-detail {
+        width: 100%;
+    }
+
+    .main-maps .maps__col-detail {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .main-maps .maps__col-map {
+        margin-top: 30px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 320/190;
+    }
+
+    .main-maps .maps__col-map .map-wrap {
+        border-radius: 0;
+    }
+
+    .main-maps.listed .maps__list {
+        width: 100%;
+        border: none;
+    }
+
+    .main-maps.listed .maps__list .list {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .main-maps.listed .maps__list .list__item {
+        padding: 20px 10px;
+    }
+
+    .main-maps .maps__detail {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-maps .maps__wrapper.padded-b {
+        padding-bottom: 50px;
+    }
+
+    .main-maps .maps__wrapper.padded-t {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .main-maps .maps__wrapper.padded-b {
+        padding-bottom: 40px;
+    }
+
+    .main-maps .maps__wrapper.padded-t {
+        padding-top: 40px;
+    }
+
+    .main-maps .maps__title {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+
+    .main-maps .maps__subtitle {
+        font-size: 1.3em;
+    }
+
+    .main-maps .maps__col-detail {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .main-maps .maps__detail .detail__big {
+        font-size: 1.6em;
+        margin-bottom: 1.25em;
+    }
+}

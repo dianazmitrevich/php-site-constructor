@@ -1,0 +1,343 @@
+.main-services:has(.cards-30) .services__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-services:has(.cards-30) .services__info:has(.services__title.d-none) {
+    flex-direction: column-reverse;
+}
+
+.main-services:has(.cards-30) .services__info:has(.services__title.d-none) .services__subtitle {
+    order: 2;
+    margin-bottom: -20px;
+}
+
+.main-services:has(.cards-30) .services__info:has(.services__subtitle.d-none) .services__all {
+    top: 9px;
+}
+
+.main-services:has(.cards-30) .services__info .services__all {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    display: block;
+    font-size: 1.5em;
+    line-height: 1.33em;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.main-services:has(.cards-30) .d-none.services__title ~ .services__all {
+    position: relative;
+    margin-bottom: 1.3em;
+    justify-content: flex-end;
+}
+
+.main-services:has(.cards-30) .services__info .services__all svg {
+    margin-left: 6px;
+    margin-bottom: -2px;
+}
+
+.main-services:has(.cards-30) .services__info .services__all:hover {
+    color: var(--color-accent);
+}
+
+.main-services:has(.cards-30) .services__info .services__all svg path {
+    transition: all 0.2s ease-in-out;
+}
+
+.main-services:has(.cards-30) .services__info .services__all:hover svg path {
+    fill: var(--color-accent);
+}
+
+.main-services:has(.cards-30) .services__wrapper.padded-b {
+    padding-bottom: 60px;
+}
+
+.main-services:has(.cards-30) .services__wrapper.padded-t {
+    padding-top: 60px;
+}
+
+.main-services:has(.cards-30) .services__wrapper.padded-b .services__text,
+.main-services:has(.cards-30) .services__wrapper.padded-t .services__text {
+    margin-bottom: 15px;
+}
+
+.main-services:has(.cards-30) .v_services__wrapper-align-right .services__title,
+.main-services:has(.cards-30) .v_services__wrapper-align-right .services__subtitle {
+    text-align: right;
+    margin-left: auto;
+}
+
+.main-services:has(.cards-30) .v_services__wrapper-align-center .services__title,
+.main-services:has(.cards-30) .v_services__wrapper-align-center .services__subtitle {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-services:has(.cards-30) .v_services__wrapper-align-center .services__all,
+.main-services:has(.cards-30) .v_services__wrapper-align-right .services__all {
+    display: none;
+}
+
+.main-services:has(.cards-30) .services__title {
+    font-size: 2.6em;
+    font-weight: 800;
+    line-height: 115%;
+    letter-spacing: -1%;
+    margin-bottom: 0.76em;
+    max-width: 571px;
+}
+
+.main-services:has(.cards-30) .services__subtitle {
+    font-size: 1.5em;
+    line-height: 1.26em;
+    text-transform: uppercase;
+}
+
+.main-services:has(.cards-30) .services__text {
+    font-size: 1.3em;
+    line-height: 130.5%;
+    margin-bottom: 2.15em;
+}
+
+.main-services:has(.cards-30) .services__text b {
+    font-weight: 700;
+}
+
+.main-services:has(.cards-30) .services__cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-services .cards-30 .services__card {
+    width: calc(50% - 4px);
+    min-height: 180px;
+    max-height: 180px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    border: 1px solid var(--color-mid);
+    transition: box-shadow 0.24s ease-in-out;
+    border-radius: 10px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.main-services .cards-30 .services__card:nth-of-type(2n) {
+    margin-right: 0;
+}
+
+.main-services .cards-30 .services__card .card__row {
+    display: flex;
+    align-items: center;
+}
+
+.main-services .cards-30 .services__card .card-wrap {
+    position: relative;
+    width: 185px;
+    height: 178px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 26px 20px;
+    cursor: pointer;
+}
+
+.main-services .cards-30 .services__card .card-wrap .wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-services .cards-30 .services__card .card-wrap .wrap img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-services .cards-30 .services__card .card__wrap {
+    width: calc(100% - 185px);
+    padding: 30px 20px 30px 0;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    color: var(--color-dark);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+    max-height: 178px;
+}
+
+.main-services .cards-30 .services__card:after {
+    position: absolute;
+    content: "";
+    width: calc(100% - 183px);
+    height: 53px;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    background: var(--cards-linear-overflow);
+}
+
+.main-services .cards-30 .services__card .card__title {
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.38em;
+    width: fit-content;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 10px;
+    color: var(--color-accent);
+}
+
+.main-services .cards-30 .services__card .card__title:hover {
+    color: var(--color-dark);
+    cursor: pointer;
+}
+
+.main-services .cards-30 .services__card .card__tags {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.main-services .cards-30 .services__card .card__tags a {
+    display: inline;
+    font-size: 1.3em;
+    line-height: 1.6em;
+    font-weight: 600;
+    text-decoration-thickness: 0.8px;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 0.31em;
+    margin-right: 15px;
+    position: relative;
+}
+
+.main-services .cards-30 .services__card .card__tags a:after {
+    content: "";
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.61em;
+    left: -10px;
+    background: var(--color-dark);
+}
+
+.main-services .cards-30 .services__card .card__tags a:first-of-type:after {
+    content: unset;
+}
+
+.main-services .cards-30 .services__card .card__tags a:hover {
+    text-decoration: none;
+}
+
+.main-services .cards-30 .services__card .card__text {
+    font-size: 1.3em;
+    color: var(--settings-side-text);
+    margin-bottom: 10px;
+}
+
+.main-services .cards-30 .services__card .card-wrap img {
+    transition: all 0.3s ease-in-out;
+}
+
+.main-services .cards-30 .services__card:hover .card-wrap img {
+    transform: scale(1.1);
+}
+
+.main-services .cards-30 .services__card:hover {
+    box-shadow: var(--cards-hover);
+}
+
+@media (max-width: 880px) {
+    .main-services .cards-30 .services__card {
+        width: 100%;
+        max-height: unset;
+        margin-right: 0;
+        min-height: unset;
+    }
+
+    .main-services .cards-30 .services__card .card__wrap {
+        max-height: unset;
+        width: calc(100% - 106px);
+    }
+
+    .main-services .cards-30 .services__card:after {
+        content: unset;
+    }
+
+    .main-services .cards-30 .services__card .card__text,
+    .main-services .cards-30 .services__card .card__tags {
+        display: none;
+    }
+
+    .main-services .cards-30 .services__card .card-wrap {
+        width: 106px;
+        height: 97px;
+        padding: 15px;
+    }
+
+    .main-services .cards-30 .services__card .card__title {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-services:has(.cards-30) .services__wrapper.padded-b {
+        padding-bottom: 50px;
+    }
+
+    .main-services:has(.cards-30) .services__wrapper.padded-t {
+        padding-top: 50px;
+    }
+
+    .main-services .cards-30 .services__card .card__title {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 575px) {
+    .main-services:has(.cards-30) .services__wrapper.padded-b {
+        padding-bottom: 40px;
+    }
+
+    .main-services:has(.cards-30) .services__wrapper.padded-t {
+        padding-top: 40px;
+    }
+
+    .main-services:has(.cards-30) .services__title {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    .main-services:has(.cards-30) .services__subtitle {
+        font-size: 1.3em;
+    }
+
+    .main-services:has(.cards-30) .services__text {
+        line-height: 1.38em;
+    }
+
+    .main-services:has(.cards-30) .services__wrapper.padded-b .services__text,
+    .main-services:has(.cards-30) .services__wrapper.padded-t .services__text {
+        margin-bottom: 2.15em;
+    }
+
+    .main-services:has(.cards-30) .services__info:has(.services__subtitle.d-none) .services__all {
+        top: 0;
+    }
+}

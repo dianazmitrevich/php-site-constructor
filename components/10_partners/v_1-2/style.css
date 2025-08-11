@@ -1,0 +1,237 @@
+.main-partners:has(.cards-1) .partners__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-partners:has(.cards-1) .partners__info:has(.partners__title.d-none) {
+    flex-direction: column-reverse;
+}
+
+.main-partners:has(.cards-1) .partners__info:has(.partners__title.d-none) .partners__subtitle {
+    order: 2;
+    margin-bottom: -20px;
+}
+
+.main-partners:has(.cards-1) .partners__info:has(.partners__subtitle.d-none) .partners__all {
+    top: 9px;
+}
+
+.main-partners:has(.cards-1) .partners__info .partners__all {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    display: block;
+    font-size: 1.5em;
+    line-height: 1.33em;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.main-partners:has(.cards-1) .d-none.partners__title ~ .partners__all {
+    position: relative;
+    margin-bottom: 1.3em;
+    justify-content: flex-end;
+}
+
+.main-partners:has(.cards-1) .partners__info .partners__all svg {
+    margin-left: 6px;
+    margin-bottom: -2px;
+}
+
+.main-partners:has(.cards-1) .partners__info .partners__all:hover {
+    color: var(--color-accent);
+}
+
+.main-partners:has(.cards-1) .partners__info .partners__all svg path {
+    transition: all 0.2s ease-in-out;
+}
+
+.main-partners:has(.cards-1) .partners__info .partners__all:hover svg path {
+    fill: var(--color-accent);
+}
+
+.main-partners:has(.cards-1) .partners__wrapper.padded-b {
+    padding-bottom: 60px;
+}
+
+.main-partners:has(.cards-1) .partners__wrapper.padded-t {
+    padding-top: 60px;
+}
+
+.main-partners:has(.cards-1) .partners__wrapper.padded-b .partners__text,
+.main-partners:has(.cards-1) .partners__wrapper.padded-t .partners__text {
+    margin-bottom: 15px;
+}
+
+.main-partners:has(.cards-1) .partners__wrapper.align-right .partners__title,
+.main-partners:has(.cards-1) .partners__wrapper.align-right .partners__subtitle {
+    text-align: right;
+    margin-left: auto;
+}
+
+.main-partners:has(.cards-1) .partners__wrapper.align-center .partners__title,
+.main-partners:has(.cards-1) .partners__wrapper.align-center .partners__subtitle {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-partners:has(.cards-1) .partners__wrapper.align-center .partners__all,
+.main-partners:has(.cards-1) .partners__wrapper.align-right .partners__all {
+    display: none;
+}
+
+.main-partners:has(.cards-1) .partners__title {
+    font-size: 2.6em;
+    font-weight: 800;
+    line-height: 115%;
+    letter-spacing: -1%;
+    margin-bottom: 0.76em;
+    max-width: 571px;
+}
+
+.main-partners:has(.cards-1) .partners__subtitle {
+    font-size: 1.5em;
+    line-height: 1.26em;
+    text-transform: uppercase;
+}
+
+.main-partners:has(.cards-1) .partners__text {
+    font-size: 1.3em;
+    line-height: 130.5%;
+    margin-bottom: 2.15em;
+}
+
+.main-partners:has(.cards-1) .partners__text b {
+    font-weight: 700;
+}
+
+.main-partners:has(.cards-1) .partners__cards {
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 1px solid var(--color-mid);
+    border-top: 1px solid var(--color-mid);
+}
+
+.main-partners .cards-1 .partners__card {
+    width: 25%;
+    height: auto;
+    aspect-ratio: 302/137;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    transition: box-shadow 0.24s ease-in-out;
+    border-right: 1px solid var(--color-mid);
+    border-bottom: 1px solid var(--color-mid);
+}
+
+.main-partners .cards-1 .partners__card:nth-of-type(4n) {
+    margin-right: 0;
+}
+
+.main-partners .cards-1 .partners__card .card-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.main-partners .cards-1 .partners__card .img-cage {
+    max-width: 167px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 167/76;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100%;
+}
+
+.main-partners .cards-1 .partners__card .img-cage img {
+    height: 100%;
+    width: auto;
+}
+
+.main-partners .cards-1 .partners__card:hover {
+    box-shadow: var(--cards-hover);
+}
+
+@media (max-width: 767px) {
+    .main-partners:has(.cards-1) .partners__wrapper.padded-b {
+        padding-bottom: 50px;
+    }
+
+    .main-partners:has(.cards-1) .partners__wrapper.padded-t {
+        padding-top: 50px;
+    }
+
+    .main-partners .cards-1 .partners__card {
+        width: 50%;
+    }
+}
+
+@media (max-width: 575px) {
+    .main-partners:has(.cards-1) .partners__wrapper.padded-b {
+        padding-bottom: 40px;
+    }
+
+    .main-partners:has(.cards-1) .partners__wrapper.padded-t {
+        padding-top: 40px;
+    }
+
+    .main-partners:has(.cards-1) .partners__title {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    .main-partners:has(.cards-1) .partners__subtitle {
+        font-size: 1.3em;
+    }
+
+    .main-partners:has(.cards-1) .partners__text {
+        line-height: 1.38em;
+    }
+
+    .main-partners:has(.cards-1) .partners__wrapper.padded-b .partners__text,
+    .main-partners:has(.cards-1) .partners__wrapper.padded-t .partners__text {
+        margin-bottom: 2.15em;
+    }
+
+    .main-partners:has(.cards-1) .partners__info:has(.partners__subtitle.d-none) .partners__all {
+        top: 0;
+    }
+
+    .main-partners .cards-1 {
+        border-radius: 10px 10px 0 10px;
+    }
+
+    .main-partners .cards-1 .partners__card:nth-of-type(2) {
+        border-radius: 0 10px 0 0;
+    }
+
+    .main-partners .cards-1 .partners__card:nth-of-type(7) {
+        border-radius: 0 0 0 10px;
+    }
+    .main-partners .cards-1 .partners__card:nth-of-type(8) {
+        border-radius: 0 0 10px 0;
+    }
+
+    .main-partners .cards-1:not(:has(.partners__card:nth-of-type(7))) .partners__card:nth-of-type(3) {
+        border-radius: 0 0 0 10px;
+    }
+    .main-partners .cards-1:not(:has(.partners__card:nth-of-type(7))) .partners__card:nth-of-type(4) {
+        border-radius: 0 0 10px 0;
+    }
+
+    .main-partners .cards-1 .partners__card .card-wrap {
+        padding: 9px 28px;
+    }
+}

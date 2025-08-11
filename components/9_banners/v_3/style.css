@@ -1,0 +1,185 @@
+.main-page-banner:has(.item-3) .banner__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-page-banner:has(.item-3) .banner__info:has(.banner__title.d-none) {
+    flex-direction: column-reverse;
+}
+
+.main-page-banner:has(.item-3) .banner__info:has(.banner__title.d-none) .banner__subtitle {
+    order: 2;
+    margin-bottom: -20px;
+}
+
+.main-page-banner:has(.item-3) .banner__wrapper.padded-b {
+    padding-bottom: 60px;
+}
+
+.main-page-banner:has(.item-3) .banner__wrapper.padded-t {
+    padding-top: 60px;
+}
+
+.main-page-banner:has(.item-3) .banner__wrapper.padded-b .banner__text,
+.main-page-banner:has(.item-3) .banner__wrapper.padded-t .banner__text {
+    margin-bottom: 15px;
+}
+
+.main-page-banner:has(.item-3) .v_banner__wrapper-align-right .banner__title,
+.main-page-banner:has(.item-3) .v_banner__wrapper-align-right .banner__subtitle {
+    text-align: right;
+    margin-left: auto;
+}
+
+.main-page-banner:has(.item-3) .v_banner__wrapper-align-center .banner__title,
+.main-page-banner:has(.item-3) .v_banner__wrapper-align-center .banner__subtitle {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-page-banner:has(.item-3) .banner__title {
+    font-size: 2.6em;
+    font-weight: 800;
+    line-height: 115%;
+    letter-spacing: -1%;
+    margin-bottom: 0.76em;
+    max-width: 571px;
+}
+
+.main-page-banner:has(.item-3) .banner__subtitle {
+    font-size: 1.5em;
+    line-height: 1.26em;
+    text-transform: uppercase;
+}
+
+.main-page-banner:has(.item-3) .banner__text {
+    font-size: 1.3em;
+    line-height: 130.5%;
+    margin-bottom: 2.15em;
+}
+
+.main-page-banner:has(.item-3) .banner__text b {
+    font-weight: 700;
+}
+
+.main-page-banner:has(.item-3) .banner__row {
+    display: flex;
+}
+
+.main-page-banner:has(.item-3) .banner__item {
+    width: calc((100% - 10px * 2) / 3);
+    border-radius: 10px;
+    height: 264px;
+    overflow: hidden;
+    display: block;
+    margin-right: 10px;
+}
+
+.main-page-banner:has(.item-3) .banner__item:last-of-type {
+    margin-right: 0;
+}
+
+.main-page-banner:has(.item-3) .banner__item .item__image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.main-page-banner:has(.item-3) .banner__item .item__image .img-cage {
+    width: 100%;
+    height: 100%;
+}
+
+.main-page-banner:has(.item-3) .banner__item .item__image .img-desktop,
+.main-page-banner:has(.item-3) .banner__item .item__image .img-mobile {
+    width: 100%;
+    height: 100%;
+}
+
+.main-page-banner:has(.item-3) .banner__item .item__image .img-mobile {
+    display: none;
+}
+
+.main-page-banner:has(.item-3) .banner__item .item__image .img-cage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.24s ease-in-out;
+}
+
+.main-page-banner:has(.item-3) .banner__item:hover .item__image .img-cage img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1240px) {
+    .main-page-banner:has(.item-3) .banner__item {
+        height: auto;
+        aspect-ratio: 394/264;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-page-banner:has(.item-3) .banner__wrapper.padded-b {
+        padding-bottom: 50px;
+    }
+
+    .main-page-banner:has(.item-3) .banner__wrapper.padded-t {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .main-page-banner:has(.item-3) .banner__item .item__image .img-desktop {
+        display: none;
+    }
+
+    .main-page-banner:has(.item-3) .banner__item .item__image .img-mobile {
+        display: block;
+    }
+
+    .main-page-banner:has(.item-3) .banner__wrapper.padded-b {
+        padding-bottom: 40px;
+    }
+
+    .main-page-banner:has(.item-3) .banner__wrapper.padded-t {
+        padding-top: 40px;
+    }
+
+    .main-page-banner:has(.item-3) .banner__title {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    .main-page-banner:has(.item-3) .banner__subtitle {
+        font-size: 1.3em;
+    }
+
+    .main-page-banner:has(.item-3) .banner__text {
+        line-height: 1.38em;
+    }
+
+    .main-page-banner:has(.item-3) .banner__wrapper.padded-b .banner__text,
+    .main-page-banner:has(.item-3) .banner__wrapper.padded-t .banner__text {
+        margin-bottom: 2.15em;
+    }
+
+    .main-page-banner .item-3 {
+        flex-wrap: wrap;
+    }
+
+    .main-page-banner:has(.item-3) .banner__item {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 300/141.5;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .main-page-banner:has(.item-3) .banner__item:last-of-type {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,253 @@
+.main-certificates:has(.cards-1) .certificates__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-certificates:has(.cards-1) .certificates__wrapper {
+    z-index: 0;
+}
+
+.main-certificates:has(.cards-1) .certificates__info:has(.certificates__title.d-none) {
+    flex-direction: column-reverse;
+}
+
+.main-certificates:has(.cards-1) .certificates__info:has(.certificates__title.d-none) .certificates__subtitle {
+    order: 2;
+    margin-bottom: -20px;
+}
+
+.main-certificates:has(.cards-1) .certificates__wrapper.padded-b {
+    padding-bottom: 60px;
+}
+
+.main-certificates:has(.cards-1) .certificates__wrapper.padded-t {
+    padding-top: 60px;
+}
+
+.main-certificates:has(.cards-1) .certificates__wrapper.padded-b .certificates__text,
+.main-certificates:has(.cards-1) .certificates__wrapper.padded-t .certificates__text {
+    margin-bottom: 15px;
+}
+
+.main-certificates:has(.cards-1) .certificates__wrapper.align-right .certificates__title,
+.main-certificates:has(.cards-1) .certificates__wrapper.align-right .certificates__subtitle {
+    text-align: right;
+    margin-left: auto;
+}
+
+.main-certificates:has(.cards-1) .certificates__wrapper.align-center .certificates__title,
+.main-certificates:has(.cards-1) .certificates__wrapper.align-center .certificates__subtitle {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-certificates:has(.cards-1) .certificates__title {
+    font-size: 2.6em;
+    font-weight: 800;
+    line-height: 115%;
+    letter-spacing: -1%;
+    margin-bottom: 0.76em;
+    max-width: 571px;
+}
+
+.main-certificates:has(.cards-1) .certificates__subtitle {
+    font-size: 1.5em;
+    line-height: 1.26em;
+    text-transform: uppercase;
+}
+
+.main-certificates:has(.cards-1) .certificates__text {
+    font-size: 1.3em;
+    line-height: 130.5%;
+    margin-bottom: 2.15em;
+}
+
+.main-certificates:has(.cards-1) .certificates__text b {
+    font-weight: 700;
+}
+
+.main-certificates:has(.cards-1) .certificates__cards {
+    display: flex;
+}
+
+.main-certificates .cards-1 .slick-track {
+    display: flex;
+    width: 100% !important;
+}
+
+.main-certificates .cards-1 .slick-list {
+    width: 100%;
+}
+
+.main-certificates .cards-1 .certificates__card {
+    min-width: fit-content;
+    width: auto !important;
+    margin-right: 10px;
+    height: 205px;
+    overflow: hidden;
+    display: block;
+    border-radius: 10px;
+    position: relative;
+}
+
+.main-certificates .cards-1 .certificates__card:hover .card__wrap {
+    opacity: 1;
+}
+
+.main-certificates .cards-1 .certificates__card .card__wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.24s ease-in-out;
+    cursor: pointer;
+}
+
+.main-certificates .cards-1 .certificates__card .card__lupa {
+    padding: 13px;
+    padding-bottom: 14px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.31);
+    transition: background 0.24s ease-in-out;
+}
+
+.main-certificates .cards-1 .certificates__card .card__lupa svg {
+    pointer-events: none;
+}
+
+.main-certificates .cards-1 .certificates__card .card__lupa:hover {
+    background: var(--color-accent);
+    cursor: pointer;
+}
+
+.main-certificates .cards-1 .certificates__card .card__image {
+    width: fit-content;
+    height: 100%;
+}
+
+.main-certificates .cards-1 .certificates__card .card__image .img-cage {
+    overflow: hidden;
+    min-width: 100%;
+    width: fit-content;
+}
+
+.main-certificates .cards-1 .certificates__card .card__image .img-cage img {
+    width: auto;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-certificates .cards-1 .certificates__arrow {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    border: 1px solid var(--color-mid);
+    position: absolute;
+    transition: box-shadow 0.25s ease-in-out;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -18px;
+    z-index: 99;
+}
+
+.main-certificates:has(.cards-1) .certificates__arrow.slick-disabled {
+    background: var(--color-mid);
+}
+
+.main-certificates:has(.cards-1) .certificates__arrow.slick-disabled svg {
+    filter: grayscale(1);
+}
+
+.main-certificates:has(.cards-1) .certificates__arrow svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-certificates:has(.cards-1) .certificates__arrow svg path {
+    fill: var(--color-accent);
+}
+
+.main-certificates:has(.cards-1) .certificates__arrow:hover {
+    cursor: pointer;
+    box-shadow: var(--dropdown-hover);
+}
+
+.main-certificates:has(.cards-1) .certificates__arrow.slick-disabled:hover {
+    box-shadow: unset;
+    cursor: unset;
+}
+
+.main-certificates:has(.cards-1) .certificates__arrow-left {
+    right: unset;
+    left: -18px;
+}
+
+@media (max-width: 1240px) {
+    .main-certificates .cards-1 .certificates__arrow {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main-certificates .cards-1 .certificates__card .card__row {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .main-certificates .cards-1 .certificates__card .card__col-info {
+        padding-top: 0;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-certificates:has(.cards-1) .certificates__wrapper.padded-b {
+        padding-bottom: 50px;
+    }
+
+    .main-certificates:has(.cards-1) .certificates__wrapper.padded-t {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .main-certificates:has(.cards-1) .certificates__wrapper.padded-b {
+        padding-bottom: 40px;
+    }
+
+    .main-certificates:has(.cards-1) .certificates__wrapper.padded-t {
+        padding-top: 40px;
+    }
+
+    .main-certificates:has(.cards-1) .certificates__title {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    .main-certificates:has(.cards-1) .certificates__subtitle {
+        font-size: 1.3em;
+    }
+
+    .main-certificates:has(.cards-1) .certificates__text {
+        line-height: 1.38em;
+    }
+
+    .main-certificates:has(.cards-1) .certificates__wrapper.padded-b .certificates__text,
+    .main-certificates:has(.cards-1) .certificates__wrapper.padded-t .certificates__text {
+        margin-bottom: 2.15em;
+    }
+
+    .main-certificates .cards-1 .certificates__card .card__col-image .img-cage {
+        min-width: 140px;
+        width: 140px;
+    }
+}

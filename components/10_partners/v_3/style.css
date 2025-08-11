@@ -1,0 +1,271 @@
+.main-partners:has(.cards-3) .partners__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-partners:has(.cards-3) .partners__info:has(.partners__title.d-none) {
+    flex-direction: column-reverse;
+}
+
+.main-partners:has(.cards-3) .partners__info:has(.partners__title.d-none) .partners__subtitle {
+    order: 2;
+    margin-bottom: -20px;
+}
+
+.main-partners:has(.cards-3) .partners__wrapper.padded-b {
+    padding-bottom: 60px;
+}
+
+.main-partners:has(.cards-3) .partners__wrapper.padded-t {
+    padding-top: 60px;
+}
+
+.main-partners:has(.cards-3) .partners__wrapper.padded-b .partners__text,
+.main-partners:has(.cards-3) .partners__wrapper.padded-t .partners__text {
+    margin-bottom: 15px;
+}
+
+.main-partners:has(.cards-3) .partners__wrapper.align-center .partners__title,
+.main-partners:has(.cards-3) .partners__wrapper.align-center .partners__subtitle {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-partners:has(.cards-3) .partners__wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.main-partners:has(.cards-3) .partners__wrapper:before {
+    content: "";
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    background: var(--color-light);
+    z-index: 9999;
+}
+
+.main-partners:has(.cards-3) .partners__wrapper:after {
+    content: "";
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    background: var(--color-light);
+    z-index: 9999;
+}
+
+.main-partners:has(.cards-3) .partners__title {
+    font-size: 2.6em;
+    font-weight: 800;
+    line-height: 115%;
+    letter-spacing: -1%;
+    margin-bottom: 0.76em;
+    max-width: 571px;
+}
+
+.main-partners:has(.cards-3) .partners__subtitle {
+    font-size: 1.5em;
+    line-height: 1.26em;
+    text-transform: uppercase;
+}
+
+.main-partners:has(.cards-3) .partners__text {
+    font-size: 1.3em;
+    line-height: 130.5%;
+    margin-bottom: 2.15em;
+}
+
+.main-partners:has(.cards-3) .partners__text b {
+    font-weight: 700;
+}
+
+.main-partners:has(.cards-3) .partners__cards {
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 1px solid var(--color-mid);
+    border-top: 1px solid var(--color-mid);
+}
+
+.main-partners:has(.cards-3) .partners__cards .slick-list,
+.main-partners:has(.cards-3) .partners__cards .slick-track {
+    width: 100%;
+}
+
+.main-partners:has(.cards-3) .partners__cards .slick-track {
+    margin: 0;
+}
+
+.main-partners .cards-3 .partners__card {
+    width: 25%;
+    height: auto;
+    aspect-ratio: 302/137;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    transition: box-shadow 0.24s ease-in-out;
+    border-right: 1px solid var(--color-mid);
+    border-bottom: 1px solid var(--color-mid);
+}
+
+.main-partners .cards-3 .partners__card:nth-of-type(4n) {
+    margin-right: 0;
+    margin-left: -1px;
+}
+
+.main-partners .cards-3 .partners__card .card-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.main-partners .cards-3 .partners__card .img-cage {
+    max-width: 167px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 167/76;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100%;
+}
+
+.main-partners .cards-3 .partners__card .img-cage img {
+    height: 100%;
+    width: auto;
+}
+
+.main-partners .cards-3 .partners__card:hover {
+    box-shadow: var(--cards-hover);
+}
+
+.main-partners .cards-3 .partners__arrow {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    border: 1px solid var(--color-mid);
+    background: var(--color-light);
+    position: absolute;
+    transition: box-shadow 0.25s ease-in-out;
+    top: -54px;
+    right: 0;
+    z-index: 99;
+}
+
+.main-partners:has(.cards-3) .partners__arrow.slick-disabled {
+    background: var(--color-mid);
+}
+
+.main-partners:has(.cards-3) .partners__arrow.slick-disabled svg {
+    filter: grayscale(1);
+}
+
+.main-partners:has(.cards-3) .partners__arrow svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-partners:has(.cards-3) .partners__arrow svg path {
+    fill: var(--color-accent);
+}
+
+.main-partners:has(.cards-3) .partners__arrow:hover {
+    cursor: pointer;
+    box-shadow: var(--dropdown-hover);
+}
+
+.main-partners:has(.cards-3) .partners__arrow.slick-disabled:hover {
+    box-shadow: unset;
+    cursor: unset;
+}
+
+.main-partners:has(.cards-3) .partners__arrow-left {
+    right: 49px;
+}
+
+.main-partners:has(.cards-3) .partners__cards .slick-list {
+    overflow: visible;
+}
+
+@media (max-width: 767px) {
+    .main-partners:has(.cards-3) .partners__wrapper.padded-b {
+        padding-bottom: 50px;
+    }
+
+    .main-partners:has(.cards-3) .partners__wrapper.padded-t {
+        padding-top: 50px;
+    }
+
+    .main-partners .cards-3 .partners__card {
+        width: 50%;
+    }
+}
+
+@media (max-width: 575px) {
+    .main-partners:has(.cards-3) .partners__wrapper.padded-b {
+        padding-bottom: 40px;
+    }
+
+    .main-partners:has(.cards-3) .partners__wrapper.padded-t {
+        padding-top: 40px;
+    }
+
+    .main-partners:has(.cards-3) .partners__title {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    .main-partners:has(.cards-3) .partners__subtitle {
+        font-size: 1.3em;
+    }
+
+    .main-partners:has(.cards-3) .partners__text {
+        line-height: 1.38em;
+    }
+
+    .main-partners:has(.cards-3) .partners__wrapper.padded-b .partners__text,
+    .main-partners:has(.cards-3) .partners__wrapper.padded-t .partners__text {
+        margin-bottom: 2.15em;
+    }
+
+    .main-partners .cards-3 {
+        border-radius: 10px 10px 0 10px;
+    }
+
+    .main-partners .cards-3 .partners__card:nth-of-type(2) {
+        border-radius: 0 10px 0 0;
+    }
+
+    .main-partners .cards-3 .partners__card:nth-of-type(7) {
+        border-radius: 0 0 0 10px;
+    }
+    .main-partners .cards-3 .partners__card:nth-of-type(8) {
+        border-radius: 0 0 10px 0;
+    }
+
+    .main-partners .cards-3 .partners__card {
+        height: 133px;
+        border-radius: 10px !important;
+    }
+
+    .main-partners .cards-3 .partners__card .card-wrap {
+        padding: 9px 28px;
+    }
+
+    .main-partners .cards-3 .partners__arrow {
+        display: none !important;
+    }
+}
